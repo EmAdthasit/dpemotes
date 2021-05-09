@@ -80,24 +80,26 @@ function EmoteBindsStart()
 end
 
 function EmoteBindStart(source, args, raw)
-    if #args > 0 then
-        local key = string.lower(args[1])
-        local emote = string.lower(args[2])
-        if (Config.KeybindKeys[key]) ~= nil then
-        	if DP.Emotes[emote] ~= nil then
-          		TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
-        	elseif DP.Dances[emote] ~= nil then
-          		TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
-        	elseif DP.PropEmotes[emote] ~= nil then
-          		TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
-        	else
-          		EmoteChatMessage("'"..emote.."' "..Config.Languages[lang]['notvalidemote'].."")
-        	end
+    if enableEmote then
+        if #args > 0 then
+            local key = string.lower(args[1])
+            local emote = string.lower(args[2])
+            if (Config.KeybindKeys[key]) ~= nil then
+                if DP.Emotes[emote] ~= nil then
+                      TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
+                elseif DP.Dances[emote] ~= nil then
+                      TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
+                elseif DP.PropEmotes[emote] ~= nil then
+                      TriggerServerEvent("dp:ServerKeybindUpdate", key, emote)
+                else
+                      EmoteChatMessage("'"..emote.."' "..Config.Languages[lang]['notvalidemote'].."")
+                end
+            else
+                EmoteChatMessage("'"..key.."' "..Config.Languages[lang]['notvalidkey'])
+            end
         else
-        	EmoteChatMessage("'"..key.."' "..Config.Languages[lang]['notvalidkey'])
+            print("invalid")
         end
-    else
-        print("invalid")
     end
 end
 
