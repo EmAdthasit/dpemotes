@@ -82,7 +82,7 @@ end)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(5)
-        if IsControlJustPressed(1, 246) and isRequestAnim then
+        if IsControlJustPressed(1, 191) and isRequestAnim then
         target, distance = GetClosestPlayer()
             if(distance ~= -1 and distance < 3) then
                 if DP.Shared[requestedemote] ~= nil then
@@ -96,7 +96,7 @@ Citizen.CreateThread(function()
             else
                 SimpleNotify(Config.Languages[lang]['nobodyclose'])
             end
-        elseif IsControlJustPressed(1, 182) and isRequestAnim then
+        elseif IsControlJustPressed(1, 194) and isRequestAnim then
             SimpleNotify(Config.Languages[lang]['refuseemote'])
             isRequestAnim = false
         end
