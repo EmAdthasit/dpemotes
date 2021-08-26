@@ -274,7 +274,9 @@ function AddInfoMenu(menu)
 end
 
 function OpenEmoteMenu()
-    mainMenu:Visible(not mainMenu:Visible())
+    if enableEmote then
+      mainMenu:Visible(not mainMenu:Visible())
+    end
 end
 
 function firstToUpper(str)

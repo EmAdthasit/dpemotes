@@ -13,3 +13,5 @@ server_scripts {
 	'@mysql-async/lib/MySQL.lua',
 	'Server/*.lua'
 }
+
+data_file "DLC_ITYP_REQUEST" "stream/familie_babyshop.ytyp"

@@ -16,6 +16,7 @@ local PtfxNotif = false
 local PtfxPrompt = false
 local PtfxWait = 500
 local PtfxNoProp = false
+enableEmote = true
 
 Citizen.CreateThread(function()
   while true do
@@ -40,6 +41,22 @@ Citizen.CreateThread(function()
     if Config.EnableXtoCancel then if IsControlPressed(0, 73) then EmoteCancel() end end
     Citizen.Wait(1)
   end
+end)
+
+AddEventHandler("rabbit_core:clearMemory", function()
+  Citizen.CreateThread(function()
+      local wait = math.random(100, 2000)
+      Wait(wait)
+      collectgarbage()
+  end)
+end)
+
+-----------------------------------------------------------------------------------------------------
+-- DeathZone ----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+RegisterNetEvent('dpemotes:setEnableEmote')
+AddEventHandler('dpemotes:setEnableEmote', function(status)
+  enableEmote = status
 end)
 
 -----------------------------------------------------------------------------------------------------
@@ -141,12 +158,14 @@ function PtfxStop()
 end
 
 function EmotesOnCommand(source, args, raw)
-  local EmotesCommand = ""
-  for a in pairsByKeys(DP.Emotes) do
-    EmotesCommand = EmotesCommand .. ""..a..", "
+  if enableEmote then    
+    local EmotesCommand = ""
+    for a in pairsByKeys(DP.Emotes) do
+      EmotesCommand = EmotesCommand .. ""..a..", "
+    end
+    EmoteChatMessage(EmotesCommand)
+    EmoteChatMessage(Config.Languages[lang]['emotemenucmd'])
   end
-  EmoteChatMessage(EmotesCommand)
-  EmoteChatMessage(Config.Languages[lang]['emotemenucmd'])
 end
 
 function pairsByKeys (t, f)
@@ -193,27 +212,29 @@ function EmoteMenuStart(args, hard)
 end
 
 function EmoteCommandStart(source, args, raw)
-    if #args > 0 then
-    local name = string.lower(args[1])
-    if name == "c" then
-        if IsInAnimation then
-            EmoteCancel()
-        else
-            EmoteChatMessage(Config.Languages[lang]['nocancel'])
-        end
-      return
-    elseif name == "help" then
-      EmotesOnCommand()
-    return end
-
-    if DP.Emotes[name] ~= nil then
-      if OnEmotePlay(DP.Emotes[name]) then end return
-    elseif DP.Dances[name] ~= nil then
-      if OnEmotePlay(DP.Dances[name]) then end return
-    elseif DP.PropEmotes[name] ~= nil then
-      if OnEmotePlay(DP.PropEmotes[name]) then end return
-    else
-      EmoteChatMessage("'"..name.."' "..Config.Languages[lang]['notvalidemote'].."")
+    if enableEmote then
+      if #args > 0 then
+      local name = string.lower(args[1])
+      if name == "c" then
+          if IsInAnimation then
+              EmoteCancel()
+          else
+              EmoteChatMessage(Config.Languages[lang]['nocancel'])
+          end
+        return
+      elseif name == "help" then
+        EmotesOnCommand()
+      return end
+  
+      if DP.Emotes[name] ~= nil then
+        if OnEmotePlay(DP.Emotes[name]) then end return
+      elseif DP.Dances[name] ~= nil then
+        if OnEmotePlay(DP.Dances[name]) then end return
+      elseif DP.PropEmotes[name] ~= nil then
+        if OnEmotePlay(DP.PropEmotes[name]) then end return
+      else
+        EmoteChatMessage("'"..name.."' "..Config.Languages[lang]['notvalidemote'].."")
+      end
     end
   end
 end
