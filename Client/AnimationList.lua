@@ -2513,7 +2513,7 @@ DP.PropEmotes = {
    }},
    ["phonecall"] = {"cellphone@", "cellphone_call_listen_base", "Phone Call", AnimationOptions =
    {
-       Prop = "prop_npc_phone_02",
+       Prop = "ifruit_12",
        PropBone = 28422,
        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
        EmoteLoop = true,
@@ -2521,7 +2521,7 @@ DP.PropEmotes = {
    }},
    ["phone"] = {"cellphone@", "cellphone_text_read_base", "Phone", AnimationOptions =
    {
-       Prop = "prop_npc_phone_02",
+       Prop = "ifruit_12",
        PropBone = 28422,
        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
        EmoteLoop = true,
