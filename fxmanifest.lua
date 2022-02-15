@@ -14,4 +14,11 @@ server_scripts {
 	'Server/*.lua'
 }
 
+exports {
+	"OnEmotePlay",
+	"CheckGender",
+	"EmoteCancel",
+	"GetPlayerHasProp",
+}
+
 data_file "DLC_ITYP_REQUEST" "stream/familie_babyshop.ytyp"
