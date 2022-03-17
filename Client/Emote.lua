@@ -43,14 +43,6 @@ Citizen.CreateThread(function()
   end
 end)
 
-AddEventHandler("rabbit_core:clearMemory", function()
-  Citizen.CreateThread(function()
-      local wait = math.random(100, 2000)
-      Wait(wait)
-      collectgarbage()
-  end)
-end)
-
 -----------------------------------------------------------------------------------------------------
 -- DeathZone ----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
