@@ -155,6 +155,19 @@ function AddEmoteMenu(menu)
       EmoteMenuStart(DanceTable[index], "dances")
     end
 
+    function dump(o)
+      if type(o) == 'table' then
+         local s = '{ '
+         for k,v in pairs(o) do
+            if type(k) ~= 'number' then k = '"'..k..'"' end
+            s = s .. '['..k..'] = ' .. dump(v) .. ','
+         end
+         return s .. '} '
+      else
+         return tostring(o)
+      end
+   end
+
     if Config.SharedEmotesEnabled then
       sharemenu.OnItemSelect = function(sender, item, index)
         if ShareTable[index] ~= 'none' then

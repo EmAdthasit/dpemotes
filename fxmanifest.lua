@@ -19,6 +19,8 @@ exports {
 	"CheckGender",
 	"EmoteCancel",
 	"GetPlayerHasProp",
+	"SendToRabbitEmotes",
+	"WalkMenuStart",
 }
 
 data_file "DLC_ITYP_REQUEST" "stream/familie_babyshop.ytyp"
