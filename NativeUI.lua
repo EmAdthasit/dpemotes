@@ -494,7 +494,8 @@ end
 function AddLongStringForAscii(str)
     local maxbytelength = 99
     for i = 0, GetCharacterCount(str), 99 do
-        AddTextComponentSubstringPlayerName(string.sub(str, i, math.min(maxbytelength, GetCharacterCount(str) - i))) --needs changed
+        -- AddTextComponentSubstringPlayerName(string.sub(str, i, math.min(maxbytelength, GetCharacterCount(str) - i))) --needs changed
+        AddTextComponentString(string.sub(str, i, math.min(maxbytelength, GetCharacterCount(str) - i))) --needs changed
     end
 end
 
@@ -503,7 +504,8 @@ function AddLongStringForUtf8(str)
     local bytecount = GetByteCount(str)
 
     if bytecount < maxbytelength then
-        AddTextComponentSubstringPlayerName(str)
+        -- AddTextComponentSubstringPlayerName(str)
+        AddTextComponentString(str)
         return
     end
 
@@ -512,12 +514,14 @@ function AddLongStringForUtf8(str)
     for i = 0, GetCharacterCount(str), 1 do
         local length = i - startIndex
         if GetByteCount(string.sub(str, startIndex, length)) > maxbytelength then
-            AddTextComponentSubstringPlayerName(string.sub(str, startIndex, length - 1))
+            -- AddTextComponentSubstringPlayerName(string.sub(str, startIndex, length - 1))
+            AddTextComponentString(string.sub(str, startIndex, length - 1))
             i = i - 1
             startIndex = startIndex + (length - 1)
         end
     end
-    AddTextComponentSubstringPlayerName(string.sub(str, startIndex, GetCharacterCount(str) - startIndex))
+    -- AddTextComponentSubstringPlayerName(string.sub(str, startIndex, GetCharacterCount(str) - startIndex))
+    AddTextComponentString(string.sub(str, startIndex, GetCharacterCount(str) - startIndex))
 end 
 
 function AddLongString(str)

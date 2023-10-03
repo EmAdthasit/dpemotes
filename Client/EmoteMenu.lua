@@ -24,7 +24,7 @@ else
 end
 
 _menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu("dp Emotes", "", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
+mainMenu = NativeUI.CreateMenu("Familie Emotes", "", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
 _menuPool:Add(mainMenu)
 
 function ShowNotification(text)
@@ -55,7 +55,7 @@ Citizen.CreateThread(function()
         end
       end
     end
-    Citizen.Wait(1)
+    Citizen.Wait(0)
   end
 end)
 
@@ -154,19 +154,6 @@ function AddEmoteMenu(menu)
     dancemenu.OnItemSelect = function(sender, item, index)
       EmoteMenuStart(DanceTable[index], "dances")
     end
-
-    function dump(o)
-      if type(o) == 'table' then
-         local s = '{ '
-         for k,v in pairs(o) do
-            if type(k) ~= 'number' then k = '"'..k..'"' end
-            s = s .. '['..k..'] = ' .. dump(v) .. ','
-         end
-         return s .. '} '
-      else
-         return tostring(o)
-      end
-   end
 
     if Config.SharedEmotesEnabled then
       sharemenu.OnItemSelect = function(sender, item, index)

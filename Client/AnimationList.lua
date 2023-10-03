@@ -98,22 +98,21 @@ DP.Walks = {
     ["Trevor"] = {"move_p_m_two"},
     ["Wide"] = {"move_m@bag"}
     -- I cant get these to work for some reason, if anyone knows a fix lmk
-    --["Caution"] = {"move_m@caution"},
-    --["Chubby"] = {"anim@move_m@chubby@a"},
-    --["Crazy"] = {"move_m@crazy"},
-    --["Joy"] = {"move_m@joy@a"},
-    --["Power"] = {"move_m@power"},
-    --["Sad2"] = {"anim@move_m@depression@a"},
-    --["Sad3"] = {"move_m@depression@b"},
-    --["Sad4"] = {"move_m@depression@d"},
-    --["Wading"] = {"move_m@wading"},
+    -- ["Caution"] = {"move_m@caution"},
+    -- ["Chubby"] = {"anim@move_m@chubby@a"},
+    -- ["Crazy"] = {"move_m@crazy"},
+    -- ["Joy"] = {"move_m@joy@a"},
+    -- ["Power"] = {"move_m@power"},
+    -- ["Sad2"] = {"anim@move_m@depression@a"},
+    -- ["Sad3"] = {"move_m@depression@b"},
+    -- ["Sad4"] = {"move_m@depression@d"},
+    -- ["Wading"] = {"move_m@wading"},
 }
 
 DP.Shared = {
-    --[emotename] = {dictionary, animation, displayname, targetemotename, additionalanimationoptions}
+    -- [emotename] = {dictionary, animation, displayname, targetemotename, additionalanimationoptions}
     -- you dont have to specify targetemoteanem, if you do dont it will just play the same animation on both.
     -- targetemote is used for animations that have a corresponding animation to the other player.
-
     ["handshake"] = {
         "mp_ped_interaction",
         "handshake_guy_a",
@@ -390,6 +389,381 @@ DP.Shared = {
 }
 
 DP.Dances = {
+    ["00Glap_Look_at_me"] = {"glap@ashley-look-at-me_solo", "ashley-look-at-me_solo", "Glap Ashley look at me ! ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},   
+    ["00Glap_Pacu-Jalur-Pose"] = {"glap@pose-for-attach-pacu", "pose-for-attach-pacu", "Glap Pacu Jalur Dob Dob ~r~ Pose", AnimationOptions =
+    {
+        Prop = "prop_cs_mop_s", 
+        PropBone = 57005,
+        PropPlacement = {0.31, -0.74, -0.23, -75.02, 0.0, 14.94}, 
+        SecondProp = 'bkr_prop_biker_chair_01',
+        SecondPropBone = 1,
+        SecondPropPlacement = {0.0, 0.11, -1.02, 0.0, 0.0, 177.93},    
+        EmoteLoop = true,
+        EmoteMoving = false,   
+    }},
+    ["00Glap_Pacu-Jalur-Paddle"] = {"glap@pacu-jalur--paddle", "paddle", "Glap Pacu Jalur Dob Dob ~r~ Paddle", AnimationOptions =
+    {
+        Prop = "prop_cs_mop_s", 
+        PropBone = 57005,
+        PropPlacement = {0.31, -0.74, -0.23, -75.02, 0.0, 14.94}, 
+        SecondProp = 'bkr_prop_biker_chair_01',
+        SecondPropBone = 1,
+        SecondPropPlacement = {0.0, 0.11, -1.02, 0.0, 0.0, 177.93},    
+        EmoteLoop = true,
+        EmoteMoving = false,   
+    }},
+    ["00Glap_Pacu-Jalur-Paddle-Move"] = {"glap@pacu-jalur--paddle", "paddle-move", "Glap Pacu Jalur Dob Dob ~r~ Moving", AnimationOptions =
+    {
+        Prop = "prop_cs_mop_s", 
+        PropBone = 57005,
+        PropPlacement = {0.31, -0.74, -0.23, -75.02, 0.0, 14.94}, 
+        SecondProp = 'bkr_prop_biker_chair_01',
+        SecondPropBone = 1,
+        SecondPropPlacement = {0.0, 0.11, -1.02, 0.0, 0.0, 177.93},    
+        EmoteLoop = true,
+        EmoteMoving = false,   
+    }}, 
+    ["00Glap_Pacu-Jalur-Dance"] = {"glap@pacu-jalur--dance", "pacu-jalur--dance", "Glap Pacu Jalur Dob Dob ~r~ Dance", AnimationOptions =
+    {
+        Prop = 'bkr_prop_biker_chair_01',
+        PropBone = 1,
+        PropPlacement = {0.0, -0.37, -1.02, 0.0, 0.0, 177.93},    
+        EmoteLoop = true,
+        EmoteMoving = false,   
+    }},
+    ["00Glap_Gummy-yummy"] = {"glap@gummy-yummy", "gummy-yummy", "Glap Gummy Yummy ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["00Glap_Aomanongma"] = {"glap@aomanongma", "aomanongma", "Glap Ao ma nong ma ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }}, 
+    ["00Glap_Maklaewkrap"] = {"glap@maklaewkrap", "maklaewkrap", "Glap Mak Laew Krap ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+	["00Glap_If-we-ever-broke-up"] = {"glap@if-we-ever-broke-up", "if-we-ever-broke-up", "Glap If we ever broke up ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+	["0A0AGlap_Rumv2"] = {"glap@rumv2", "rumv2", "Rum.V2 ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }}, 
+    ["00Glap_What-it-is"] = {"glap@what-it-is", "what-it-is", "Glap What it is ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["00Glap_Kaipalo-fix"] = {"glap@kaipalo_fix", "kaipalo-fix", "Glap Kaipalo ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["00Glap_Jep-meua-rai"] = {"glap@jep-meua-rai", "jep-meua-rai", "Glap Jep meua rai ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},     
+    ["00Glap_Nok-grong-hua-juk"] = {"glap@nok-grong-hua-juk", "nok-grong-hua-juk", "Glap Nok grong hua juk ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["00Glap_Nok-grong-hua-juk-loop"] = {"glap@nok-grong-hua-juk", "nok-grong-hua-juk-loop", "Glap Nok grong hua juk  ~r~ Loop", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},  
+    ["A004penguin_om_chong_ruai"] = {"penguin@dance@om_chong_ruai", "penguin_om_chong_ruai", "Penguin ~ r ~ โอม จง รวย", AnimationOptions =
+    {
+        EmoteLoop = true,
+    }},
+
+    ["0A0AGlap_Heyboi"] = {"glap@heyboi", "heyboi", "Heyboi ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Take-my-heart"] = {"glap@take-my-heart", "take-my-heart", "Take-My-Heart ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Chornplatong"] = {"glap@chornplatong", "chornplatong", "Chornplatong ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Domgao"] = {"glap@domgao", "domgao", "Domgao ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Tarkpha"] = {"glap@tarkpha", "tarkpha", "Tarkpha ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Metuomai"] = {"glap@metuomai", "metuomai", "Metuomai ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Nanaok"] = {"glap@nanaok", "nanaok", "Nanaok ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Nhumfhor1"] = {"glap@nhumfhor1", "nhumfhor1", "Nhumfhor 1 ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},    
+    ["0A0AGlap_Nhumfhor2"] = {"glap@nhumfhor2", "nhumfhor2", "Nhumfhor 2 ~r~ Thai Dance V2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }}, 
+	
+	
+	
+	
+	["0A1Glap_Boy's-liar"] = {"glap@boy's-liar", "boy's-liar_clip", "~b~Songkran~s~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+	["0A1Glap_Night_Dancer"] = {"glap@night-dancer", "night-dancer_clip", "~b~Songkran~s~ Night Dancer", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+	["0A1AGlap_Chorngang-1"] = {"glap@chorngang-1", "chorngang-1_clip", "~b~Songkran~s~ Chorngang ~r~ 1", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Chorngang-2"] = {"glap@chorngang-2", "chorngang-2_clip", "~b~Songkran~s~ Chorngang ~r~ 2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Chorngang-3"] = {"glap@chorngang-3", "chorngang-3_clip", "~b~Songkran~s~ Chorngang ~r~ 3", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AAGlap_Duengdown"] = {"glap@duengdown", "duengdown_clip", "~b~Songkran~s~ Duengdown  ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Khaiyang"] = {"glap@khaiyang", "khaiyang_clip", "~b~Songkran~s~ Khaiyang ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Nhokwheed"] = {"glap@nhokwheed", "nhokwheed_clip", "~b~Songkran~s~ Nhokwheed ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Nopapang"] = {"glap@nopapang", "nopapang_clip", "~b~Songkran~s~ Nopapang ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Papang"] = {"glap@papang", "papang_clip", "~b~Songkran~s~ Papang ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Rum"] = {"glap@rum", "rum_clip", "~b~Songkran~s~ Rum ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Where-exit"] = {"glap@where-exit", "where-exit_clip", "~b~Songkran~s~ Where-exit ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1AGlap_Saiyorlorrak"] = {"glap@saiyorlorrak", "saiyorlorrak_clip", "~b~Songkran~s~ Saiyorlorrak ~r~ Thai Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["ashton"] = {
+        "div@gdances@test",
+        "ashton",
+        "Ashton ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["charleston"] = {
+        "div@gdances@test",
+        "charleston",
+        "Charleston ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["doggystrut"] = {
+        "div@gdances@test",
+        "doggystrut",
+        "Strut ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["dreamfeet"] = {
+        "div@gdances@test",
+        "dreamfeet",
+        "Dream Feet ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["eerie"] = {
+        "div@gdances@test",
+        "eerie",
+        "Eerie ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["fancyfeet"] = {
+        "div@gdances@test",
+        "fancyfeet",
+        "Fancy Feet ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["festivus"] = {
+        "div@gdances@test",
+        "festivus",
+        "Rave Dance ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["flamingo"] = {
+        "div@gdances@test",
+        "flamingo",
+        "Flamingo ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["fresh"] = {
+        "div@gdances@test",
+        "fresh",
+        "Fresh ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["getgriddy"] = {
+        "div@gdances@test",
+        "getgriddy",
+        "Get Griddy ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["handstand"] = {
+        "div@gdances@test",
+        "handstand",
+        "Handstand ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["imsmooth"] = {
+        "div@gdances@test",
+        "imsmooth",
+        "Smooth ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["keepdance"] = {
+        "div@gdances@test",
+        "keepdance",
+        "Goof Off ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["montecarlo"] = {
+        "div@gdances@test",
+        "montecarlo",
+        "Monte Carlo ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["octopus"] = {
+        "div@gdances@test",
+        "octopus",
+        "Octopus ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["pointydance"] = {
+        "div@gdances@test",
+        "pointydance",
+        "Pointy ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["ridingdance"] = {
+        "div@gdances@test",
+        "ridingdance",
+        "Riding Cowboy ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["skeldance"] = {
+        "div@gdances@test",
+        "skeldance",
+        "Skeleton Dance ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["spinny"] = {
+        "div@gdances@test",
+        "spinny",
+        "Spinny ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
+    ["zombiewalk"] = {
+        "div@gdances@test",
+        "zombiewalk",
+        "Zombie Walk ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true
+        }
+    },
     ["ddance1"] = {
         "divined@dances@new",
         "ddance1",
@@ -2123,359 +2497,2172 @@ DP.Dances = {
 }
 
 DP.Emotes = {
-    ------- Familie V2 ------
+    ["AGlap_Couple-AnimV1-1-1"] = {"glap@couple-anim-v1", "couple-animv1-1-1_clip", "Couple Pose 1 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["AGlap_Couple-AnimV1-1-2"] = {"glap@couple-anim-v1", "couple-animv1-1-2_clip", "Couple Pose 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+   ["AGlap_Couple-AnimV1-2-1"] = {"glap@couple-anim-v1", "couple-animv1-2-1_clip", "Couple Pose 3 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["AGlap_Couple-AnimV1-2-2"] = {"glap@couple-anim-v1", "couple-animv1-2-2_clip", "Couple Pose 4 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+   ["AGlap_Couple-AnimV1-3-1"] = {"glap@couple-anim-v1", "couple-animv1-3-1_clip", "Couple Pose 5 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["AGlap_Couple-AnimV1-3-2"] = {"glap@couple-anim-v1", "couple-animv1-3-2_clip", "Couple Pose 6 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+   ["AGlap_Couple-AnimV1-4-1"] = {"glap@couple-anim-v1", "couple-animv1-4-1_clip", "Couple Pose 7 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["AGlap_Couple-AnimV1-4-2"] = {"glap@couple-anim-v1", "couple-animv1-4-2_clip", "Couple Pose 8 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+   ["AGlap_Couple-AnimV1-5-1"] = {"glap@couple-anim-v1", "couple-animv1-5-1_clip", "Couple Pose 9 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["AGlap_Couple-AnimV1-5-2"] = {"glap@couple-anim-v1", "couple-animv1-5-2_clip", "Couple Pose 10 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0Glap_Custom-Pose-1-1"] = {"glap@custom-pose-1", "custom-pose-1-1_clip", "Aep Baew ~r~Pose 1", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-1-2"] = {"glap@custom-pose-1", "custom-pose-1-2_clip", "Aep Baew ~r~Pose 2", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-1-3"] = {"glap@custom-pose-1", "custom-pose-1-3_clip", "Aep Baew ~r~Pose 3", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    -- ["0Glap_Custom-Pose-1-3_high"] = {"glap@custom-pose-1", "custom-pose-1-3_high_clip", "Pose 1.3-high ~r~ ⚙️", AnimationOptions =
+    -- {
+    --     EmoteLoop = true,
+    --     EmoteMoving = false
+    -- }},
+    ["0Glap_Custom-Pose-1-4"] = {"glap@custom-pose-1", "custom-pose-1-4_clip", "Aep Baew ~r~Pose 4", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    -- ["0Glap_Custom-Pose-1-4_high"] = {"glap@custom-pose-1", "custom-pose-1-4_high_clip", "Pose 1.4-high ~r~ ⚙️", AnimationOptions =
+    -- {
+    --     EmoteLoop = true,
+    --     EmoteMoving = false
+    -- }},
+    ["0Glap_Custom-Pose-3-1"] = {"glap@custom-pose-3", "custom-pose-3-1_clip", "Aep Baew Pose 5 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-3-2"] = {"glap@custom-pose-3", "custom-pose-3-2_clip", "Aep Baew Pose 6 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-3-3"] = {"glap@custom-pose-3", "custom-pose-3-3_clip", "Aep Baew Pose 7 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-3-4"] = {"glap@custom-pose-3", "custom-pose-3-4_clip", "Aep Baew Pose 8 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-3-5"] = {"glap@custom-pose-3", "custom-pose-3-5_clip", "Aep Baew Pose 9 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-Pose-3-6"] = {"glap@custom-pose-3", "custom-pose-3-6_clip", "Aep Baew Pose 10 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-4-1"] = {"glap@custom-pose-4", "custom-pose-4-1_clip", "Sitting Posture 1 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-4-2"] = {"glap@custom-pose-4", "custom-pose-4-2_clip", "Sitting Posture 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-4-3"] = {"glap@custom-pose-4", "custom-pose-4-3_clip", "Sitting Posture 3 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-4-4"] = {"glap@custom-pose-4", "custom-pose-4-4_clip", "Sitting Posture 4 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-4-5"] = {"glap@custom-pose-4", "custom-pose-4-5_clip", "Sitting Posture 5 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-1-1"] = {"glap@custom-pose-5", "custom-pose-5-1-1_clip", "Chair Sit Act ~r~New", AnimationOptions =
+    {
+        Prop = "prop_chair_03",
+        PropBone = 11816,
+        PropPlacement = {0.55, -0.18, 0.0, 25.19, -87.99, -535.36}, 
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-1-2"] = {"glap@custom-pose-5", "custom-pose-5-1-2_clip", "Pose 1 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-2-1"] = {"glap@custom-pose-5", "custom-pose-5-2-1_clip", "Pose 2 ~r~New", AnimationOptions =
+    {
+        Prop = "prop_chair_03",
+        PropBone = 11816,
+        PropPlacement = {0.55, -0.18, 0.0, 25.19, -87.99, -535.36}, 
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-2-2"] = {"glap@custom-pose-5", "custom-pose-5-2-2_clip", "Nang Wai 1 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-3-1"] = {"glap@custom-pose-5", "custom-pose-5-3-1_clip", "Chair Sit Act 2 ~r~Newx", AnimationOptions =
+    {
+        Prop = "prop_chair_03",
+        PropBone = 11816,
+        PropPlacement = {0.55, -0.18, 0.0, 25.19, -87.99, -535.36}, 
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-3-2"] = {"glap@custom-pose-5", "custom-pose-5-3-2_clip", "Nang Wai 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},   
+    ["0Glap_Custom-pose-5-4"] = {"glap@custom-pose-5", "custom-pose-5-4_clip", "Nang Wai 3 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-5-5"] = {"glap@custom-pose-5", "custom-pose-5-5_clip", "Yuen Wai ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true
+    }},
+    ["0Glap_Custom-pose-6-1-1"] = {"glap@custom-pose-6", "custom-pose-6-1-1_clip", "iSay GoodBye ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-6-1-2"] = {"glap@custom-pose-6", "custom-pose-6-1-2_clip", "Right Couple Poses ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-6-1-3"] = {"glap@custom-pose-6", "custom-pose-6-1-3_clip", "Left Couple Poses ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},    
+    -- ["0Glap_Custom-pose-6-2-1"] = {"glap@custom-pose-6", "custom-pose-6-2-1_clip", "Glap Pose 6.2.1 ~r~ ⚙️", AnimationOptions =
+    -- {
+    --     EmoteLoop = true,
+    --     EmoteMoving = false
+    -- }},
+    ["0Glap_Custom-pose-6-2-2"] = {"glap@custom-pose-6", "custom-pose-6-2-2_clip", "Pose 3 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    -- ["0Glap_Custom-pose-6-2-3"] = {"glap@custom-pose-6", "custom-pose-6-2-3_clip", "Glap Pose 6.2.3 ~r~ ⚙️", AnimationOptions =
+    -- {
+    --     EmoteLoop = true,
+    --     EmoteMoving = false
+    -- }},    
+    ["0Glap_Custom-pose-6-3-1"] = {"glap@custom-pose-6", "custom-pose-6-3-1_clip", "Sitting Pointing to Sky ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-6-3-2"] = {"glap@custom-pose-6", "custom-pose-6-3-2_clip", "Left Couple Poses 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},   
+    ["0Glap_Custom-pose-6-3-3"] = {"glap@custom-pose-6", "custom-pose-6-3-3_clip", "Right Couple Poses 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},       
+    ["0Glap_Custom-pose-6-4-1"] = {"glap@custom-pose-6", "custom-pose-6-4-1_clip", "With Legs Pose ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-6-4-2"] = {"glap@custom-pose-6", "custom-pose-6-4-2_clip", "With Legs Pose 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},   
+    -- ["0Glap_Custom-pose-6-4-3"] = {"glap@custom-pose-6", "custom-pose-6-4-3_clip", "Pose 6.4.3 ~r~ ⚙️", AnimationOptions =
+    -- {
+    --     EmoteLoop = true,
+    --     EmoteMoving = false
+    -- }},
+    ["0Glap_Custom-pose-7-1"] = {"glap@custom-pose-7", "hand_acc_1_clip", "Aep Baew Pose 11 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-7-2"] = {"glap@custom-pose-7", "hand_acc_2_clip", "Aep Baew Pose 12 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0Glap_Custom-pose-7-3"] = {"glap@custom-pose-7", "hand_acc_3_clip", "Aep Baew Pose 13 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["0A1Glap_Garden_Fertilizer"] = {"glap@garden", "fertilizer_clip", "Fertilizer Garden ~r~New", AnimationOptions =
+    {
+        Prop = "ng_proc_food_bag01a",  
+        PropBone = 18905,
+        PropPlacement = {0.16, 0.21, 0.02, 91.44, 14.88, -12.96}, 
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0A1Glap_Garden_Water-the-plants"] = {"glap@garden", "water-the-plants_clip", "Water Plants Garden ~r~New", AnimationOptions =
+    {
+        Prop = "prop_wateringcan",
+        PropBone = 57005,
+        PropPlacement = {0.22, -0.17, -0.14, -49.31, 0.0, -23.56}, 
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0A1Glap_Garden_Trimming"] = {"glap@garden", "trimming_clip", "Trimming Garden ~r~New", AnimationOptions =
+    {
+        Prop = "p_cs_scissors_s", 
+        PropBone = 18905,
+        PropPlacement = {0.08, 0.0, 0.01, 0.0, 0.14, -59.34}, 
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0A1Glap_Sugar_Rune"] = {"glap@sugar-sugar-rune", "sugar-sugar-rune_clip", "Sugar Rune Tiktok ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["0A1Glap_Sugar_Rune_Walk"] = {"glap@sugar-sugar-rune", "sugar-sugar-rune_clip", "Sugar Rune Walk ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0Glap_WhaiV1_1"] = {"glap@whai-v1", "whai-v1-1_clip", "Whai-Pra Animation ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0Glap_WhaiV1_2"] = {"glap@whai-v1", "whai-v1-2_clip", "Whai-Adult Animation ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["0Glap_WhaiV1_3"] = {"glap@whai-v1", "whai-v1-3_clip", "Whai-Friend Animation ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["AGlap_Korean_V1-1"] = {"glap@korean-poses-v1", "korean-v1-1_clip", "Kawaii Pose 1 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-2"] = {"glap@korean-poses-v1", "korean-v1-2_clip", "Kawaii Pose 2 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-3"] = {"glap@korean-poses-v1", "korean-v1-3_clip", "Kawaii Pose 3 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-4"] = {"glap@korean-poses-v1", "korean-v1-4_clip", "Kawaii Pose 4 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-5"] = {"glap@korean-poses-v1", "korean-v1-5_clip", "Kawaii Pose 5 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-6"] = {"glap@korean-poses-v1", "korean-v1-6_clip", "Kawaii Pose 6 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-7"] = {"glap@korean-poses-v1", "korean-v1-7_clip", "Kawaii Pose 7 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-8"] = {"glap@korean-poses-v1", "korean-v1-8_clip", "Kawaii Pose 8 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-9"] = {"glap@korean-poses-v1", "korean-v1-9_clip", "Kawaii Pose 9 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V1-10"] = {"glap@korean-poses-v1", "korean-v1-10_clip", "Kawaii Pose 10 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V2-1"] = {"glap@korean-poses-v2", "korean-v2-1_clip", "Kawaii Pose 11 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V2-2"] = {"glap@korean-poses-v2", "korean-v2-2_clip", "Kawaii Pose 12 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V2-3"] = {"glap@korean-poses-v2", "korean-v2-3_clip", "Kawaii Pose 13 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V2-4"] = {"glap@korean-poses-v2", "korean-v2-4_clip", "Kawaii Pose 14 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["AGlap_Korean_V2-5"] = {"glap@korean-poses-v2", "korean-v2-5_clip", "Kawaii Pose 15 ~r~New", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+	
+    ["Q4penguin_chinese1"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese1",
+        "~r~ Chinese ~s~ Khamnap",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["Q5penguin_chinese1"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese1",
+        "~r~ Chinese ~s~ Khamnap [Can Walk]",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["Q6penguin_chinese2"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese2",
+        "~r~ Chinese ~s~ Khamnap",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["Q7penguin_chinese2"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese2",
+        "~r~ Chinese ~s~ Khamnap [Can Walk]",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["Q8penguin_chinese3"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese3",
+        "~r~ Chinese ~s~ ThuePhat",
+        AnimationOptions = {
+            Prop = "pg_blow01",
+            PropBone = 18905,
+            PropPlacement = {0.16, 0.13, 0.04, 114.0, -40.0, -180.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["Q9penguin_chinese3"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese3",
+        "~r~ Chinese ~s~ ThuePhat [Can Walk]",
+        AnimationOptions = {
+            Prop = "pg_blow01",
+            PropBone = 18905,
+            PropPlacement = {0.16, 0.13, 0.04, 114.0, -40.0, -180.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["R1penguin_chinese4"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese4",
+        "~r~ Chinese ~s~ Prathat [Can Walk]",
+        AnimationOptions = {
+            Prop = "firecrackers",
+            PropBone = 57005,
+            PropPlacement = {0.52, 0.089999999999999, -0.069999999999999, -92.0, 80.0, 23.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["R2penguin_chinese5"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese5",
+        "~r~ Chinese ~s~ Prathat",
+        AnimationOptions = {
+            Prop = "firecrackers",
+            PropBone = 57005,
+            PropPlacement = {0.52, 0.089999999999999, -0.069999999999999, -92.0, 80.0, 23.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["R3penguin_chinese6"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese6",
+        "~r~ Chinese ~s~ Sign 1",
+        AnimationOptions = {
+            Prop = "pg_sign",
+            PropBone = 57005,
+            PropPlacement = {-0.2, 0.069999999999999, -0.21, -31.0, 88.0, 108.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["R4penguin_chinese7"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese7",
+        "~r~ Chinese ~s~ Sign 2",
+        AnimationOptions = {
+            Prop = "pg_sign",
+            PropBone = 57005,
+            PropPlacement = {-0.18, 0.08, -0.22, -46.0, 99.0, 108.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["R5penguin_chinese8"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese8",
+        "~r~ Chinese ~s~ Ang Pao 1",
+        AnimationOptions = {
+            Prop = "pg_red01",
+            PropBone = 57005,
+            PropPlacement = {0.22, 0.03, -0.069999999999999, -61.0, 40.0, -40.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["R6penguin_chinese9"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese9",
+        "~r~ Chinese ~s~ Ang Pao 2",
+        AnimationOptions = {
+            Prop = "pg_red02",
+            PropBone = 57005,
+            PropPlacement = {0.14, 0.03, -0.12, 40.0, 131.0, 107.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["R7penguin_chinese10"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese10",
+        "~r~ Chinese ~s~ Ang Pao 3",
+        AnimationOptions = {
+            Prop = "pg_red02",
+            PropBone = 57005,
+            PropPlacement = {0.14, 0.03, -0.12, 40.0, 131.0, 107.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["R8penguin_chinese11"] = {
+        "penguin@chinesenewyear",
+        "penguin_chinese11",
+        "~r~ Chinese ~s~ Ban Lang",
+        AnimationOptions = {
+            Prop = "pg_benchch",
+            PropBone = 57597,
+            PropPlacement = {-0.55, -0.37, 0.0, -324.0, 90.0, 180.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P6penguin_christmas1"] = {
+        "penguin@christmas",
+        "penguin_christmas1",
+        "Christmas ~r~Eve 1",
+        AnimationOptions = {
+            Prop = "cm_box",
+            PropBone = 57597,
+            PropPlacement = {-0.39, -0.23, -0.069999999999999, 0.0, 90.0, 200.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P7penguin_christmas2"] = {
+        "penguin@christmas",
+        "penguin_christmas2",
+        "Christmas ~r~Eve 2",
+        AnimationOptions = {
+            Prop = "cm_box",
+            PropBone = 57597,
+            PropPlacement = {0.8, -0.37, -0.13, 34.0, 90.0, 180.0},
+            SecondProp = 'cm_box01',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {0.12, -0.02, -0.21, -84.0, -42.0, -26.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P8penguin_christmas3"] = {
+        "penguin@christmas",
+        "penguin_christmas3",
+        "Christmas ~r~Eve 3",
+        AnimationOptions = {
+            Prop = "cm_star",
+            PropBone = 65245,
+            PropPlacement = {-0.31, 0.04, 0.29, 4.0, -10.0, 72.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P9penguin_christmas4"] = {
+        "penguin@christmas",
+        "penguin_christmas4",
+        "Christmas ~r~Eve 4",
+        AnimationOptions = {
+            Prop = "cm_chair",
+            PropBone = 57597,
+            PropPlacement = {0.22, 0.33, 0.19, -93.0, 189.0, 0.0},
+            SecondProp = 'prop_phone_ing_03',
+            SecondPropBone = 57005,
+            SecondPropPlacement = {0.15, 0.04, -0.02, 48.0, 33.0, 163.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["Q1penguin_christmas5"] = {
+        "penguin@christmas",
+        "penguin_christmas5",
+        "Christmas ~r~Eve 5",
+        AnimationOptions = {
+            Prop = "cm_candy",
+            PropBone = 57005,
+            PropPlacement = {0.15, 0.15, 0.03, -11.0, -0.99999999999999, -4.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["Q2penguin_christmas6"] = {
+        "penguin@christmas1",
+        "penguin_christmas6",
+        "Christmas ~r~Eve 6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["Q3penguin_christmas7"] = {
+        "penguin@christmas1",
+        "penguin_christmas7",
+        "Christmas ~r~Eve 7",
+        AnimationOptions = {
+            Prop = "cm_xmas",
+            PropBone = 24816,
+            PropPlacement = {-0.90, 0.99999999999999, 0.0, 0.0, 90.0, -90.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ------- penguin halloween ------
+    ["O5penguin_halloween01"] = {
+        "penguin@halloween",
+        "penguin_halloween01",
+        "~o~Halloween~s~ 1",
+        AnimationOptions = {
+            Prop = "halloween_coffin",
+            PropBone = 57597,
+            PropPlacement = {0.37, 0.23, 0.0099999999999999, 6.9999999999999, 90.0, 180.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["O6penguin_halloween02"] = {
+        "penguin@halloween",
+        "penguin_halloween02",
+        "~o~Halloween~s~ 2",
+        AnimationOptions = {
+            Prop = "halloween_broom",
+            PropBone = 57597,
+            PropPlacement = {-0.81, 0.1, 0.0, 0.0, 90.0, 204.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["O7penguin_halloween03"] = {
+        "penguin@halloween",
+        "penguin_halloween03",
+        "~o~Halloween~s~ 3",
+        AnimationOptions = {
+            Prop = "halloween_broom",
+            PropBone = 57597,
+            PropPlacement = {-0.15, 0.1, 0.0, 0.0, 90.0, 204.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["O8penguin_halloween04"] = {
+        "penguin@halloween",
+        "penguin_halloween05",
+        "~o~Halloween~s~ 4",
+        AnimationOptions = {
+            Prop = "halloween_broom",
+            PropBone = 57597,
+            PropPlacement = {-0.08, -0.16, 0.0, -90.0, 180.0, -8.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["O9penguin_halloween05"] = {
+        "penguin@halloween",
+        "penguin_halloween04",
+        "~o~Halloween~s~ 5",
+        AnimationOptions = {
+            Prop = "halloween_knife",
+            PropBone = 57005,
+            PropPlacement = {0.1, -0.15, -0.04, -61.0, 32.0, -33.0},
+            SecondProp = 'penguin_mask_13th',
+            SecondPropBone = 12844,
+            SecondPropPlacement = {-0.64, 0.0099999999999999, 0.0, 0.0, 90.0, 180.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["P1penguin_halloween06"] = {
+        "penguin@halloween",
+        "penguin_halloween06",
+        "~o~Halloween~s~ 6",
+        AnimationOptions = {
+            Prop = "halloween_chair",
+            PropBone = 57597,
+            PropPlacement = {0.12, 0.0, 0.05, 44.0, 93.0, -172.0},
+            SecondProp = 'halloween_skull',
+            SecondPropBone = 57597,
+            SecondPropPlacement = {0.28, 0.54, 0.26, 210.0, 270.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P2penguin_halloween07"] = {
+        "penguin@halloween",
+        "penguin_halloween07",
+        "~o~Halloween~s~ 7",
+        AnimationOptions = {
+            Prop = "halloween_lamp",
+            PropBone = 57005,
+            PropPlacement = {0.02, 0.020000000000001, -0.16, -182.0, -151.0, -64.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["P3penguin_halloween08"] = {
+        "penguin@halloween",
+        "penguin_halloween08",
+        "~o~Halloween~s~ 8",
+        AnimationOptions = {
+            Prop = "halloween_jar",
+            PropBone = 65245,
+            PropPlacement = {-0.27, 0.0, 0.45, 0.0, 2.4868995751604e-14, 2.4868995751604e-14},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["P4penguin_halloween09"] = {
+        "penguin@halloween",
+        "penguin_halloween09",
+        "~o~Halloween~s~ 9",
+        AnimationOptions = {
+            Prop = "halloween_ghostjar",
+            PropBone = 57005,
+            PropPlacement = {0.079999999999999, 0.0, -0.15, -90.999999999999, -33.0, 19.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+      ---- penguin V9 ----
+      ["S9penguin1_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_2_v9", "Pose Act ~r~1", AnimationOptions =
+      {
+          Prop = 'paper1',
+          PropBone = 18905,
+          PropPlacement = {0.15, 0.04, 0.04, -14.0, 90.0, -45.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T1pengui2_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_3_v9", "Pose Act iPad ~r~1", AnimationOptions =
+      {
+          Prop = 'pg_ipad',
+          PropBone = 57005,
+          PropPlacement = {0.04, 0.02, -0.02, 83.0, -5.0, 164.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T2penguin3_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_3_v9", "Pose Act iPad ~r~2", AnimationOptions =
+      {
+          Prop = 'pg_ipad',
+          PropBone = 57005,
+          PropPlacement = {0.04, 0.02, -0.02, 83.0, -5.0, 164.0},
+          EmoteLoop = true,
+          EmoteMoving = true,
+      }},
+      ["T3penguin4_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_5_v9", "Pose Sit Act iPad ~r~3", AnimationOptions =
+      {
+          Prop = 'pg_ipad',
+          PropBone = 18905,
+          PropPlacement = {0.044, 0.033, 0.022, -90.0, 4.4, -20.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T4penguin5_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_6_v9", "So Sad ~r~New", AnimationOptions =
+      {
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T5penguin6_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_7_v9", "So Very Sad ~r~New", AnimationOptions =
+      {
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T6penguin7_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_12_v9", "Pose Sit Act 4 ~r~3", AnimationOptions =
+      {
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T7penguin8_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_15_v9", "Familie Board [Songkran]", AnimationOptions =
+      {
+          Prop = 'pg_sign1',
+          PropBone = 1,
+          PropPlacement = {0.0, 0.0, 0.0, 0.0, 00.0, 180.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T8penguin9_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_16_v9", "Familie Flag 1", AnimationOptions =
+      {
+          Prop = 'pg_flag1_v9',
+          PropBone = 18905,
+          PropPlacement = {0.07, -0.26, 0.09, -94.0, 40.0, -16.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["T9penguin10_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_1_v9", "Familie Flag 2", AnimationOptions =
+      {
+          Prop = 'pg_flagv9',
+          PropBone = 24818,
+          PropPlacement = {-0.57, 0.41, -0.46, 0.0, 90.0, 190.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["U1penguin11_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_17_v9", "Cute Sofa 1", AnimationOptions =
+      {
+          Prop = 'pg_sofa1',
+          PropBone = 24816,
+          PropPlacement = {-0.16, -0.17, 0.0, -160.0, -90.0, 0.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["U2penguin12_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_18_v9", "Cute Sofa 2", AnimationOptions =
+      {
+          Prop = 'pg_sofa1',
+          PropBone = 24816,
+          PropPlacement = {0.16, -0.29, 0.0, -129.0, -90.0, 0.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["U3penguin13_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_19_v9", "Cute Sofa 3", AnimationOptions =
+      {
+          Prop = 'pg_sofa2',
+          PropBone = 24816,
+          PropPlacement = {-0.15, 0.61, 0.0, 90.0, -90.0, 0.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+      ["U4penguin14_v9"] = {"penguin@mppos@custom@v9", "penguin_mppos_20_v9", "Cute Ball", AnimationOptions =
+      {
+          Prop = 'pg_ball1',
+          PropBone = 11816,
+          PropPlacement = {0.43, -0.05, 0.0, -153.0, 90.0, 0.0},
+          EmoteLoop = true,
+          EmoteMoving = false,
+      }},
+    ------- V1 penguin ------
+    ["1penguin_update_v1_pose1"] = {
+        "penguin@update@v1",
+        "penguin_update_v1_pose1",
+        "Familie ~r~ UPDATE V1 POSE1",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["2penguin_update_v1_pose2"] = {
+        "penguin@update@v1",
+        "penguin_update_v1_pose2",
+        "Familie ~r~ UPDATE V1 POSE2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["3penguin_update_v1_pose3"] = {
+        "penguin@update@v1",
+        "penguin_update_v1_pose3",
+        "Familie ~r~ UPDATE V1 POSE3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["A1penguin_Head"] = {
+        "penguin@update@v1",
+        "penguinhead",
+        "Familie Head ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
 
-    ["apenguin_duo1_m"] = {
+    ["A2penguin_Love"] = {
+        "penguin@update@v1",
+        "penguinlove",
+        "Familie Love ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["A3penguin_standpickpocket"] = {
+        "penguin@update@v1",
+        "penguin_standpickpocket",
+        "Familie standpickpocket ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["A4penguin_2_fingers_up"] = {
+        "penguin@update@v1",
+        "penguin_2_fingers_up",
+        "Familie 2 fingers ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["A5penguin_pok_cheek"] = {
+        "penguin@update@v1",
+        "penguin_pok_cheek",
+        "Familie pokcheek ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["A6penguin_hold_the_cheek"] = {
+        "penguin@update@v1",
+        "penguin_hold_the_cheek",
+        "Familie hold the cheek ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["A7penguin_pose"] = {
+        "penguin@update@v1",
+        "penguin_pose",
+        "Familie pose 1 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["A8penguin_pose2"] = {
+        "penguin@update@v1",
+        "penguin_pose2",
+        "Familie pose 2 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["A9penguin_pose3"] = {
+        "penguin@update@v1",
+        "penguin_pose3",
+        "Familie pose 3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B1penguin_pose4"] = {
+        "penguin@update@v1",
+        "penguin_pose4",
+        "Familie pose 4 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B2penguin_pose5"] = {
+        "penguin@update@v1",
+        "penguin_pose5",
+        "Familie pose 5 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B3penguin_pose6"] = {
+        "penguin@update@v1",
+        "penguin_pose6",
+        "Familie pose 6 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B4penguin_pose7"] = {
+        "penguin@update@v1",
+        "penguin_pose7",
+        "Familie pose 7 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["B5penguin_pose8"] = {
+        "penguin@update@v1",
+        "penguin_pose8",
+        "Familie pose 8 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["B6penguin_pose9"] = {
+        "penguin@update@v1",
+        "penguin_pose9",
+        "Familie pose 9 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B7penguin_pose10"] = {
+        "penguin@update@v1",
+        "penguin_pose10",
+        "Familie pose 10 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
+    ["B8penguin_dab"] = {
+        "penguin@update@v1",
+        "penguin_dab",
+        "Familie dab ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["B9penguin_dab1"] = {
+        "penguin@update@v1",
+        "penguin_dab1",
+        "Familie dab 1 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ------- penguin V2 ------
+
+    ["C1penguin_duo1_m"] = {
         "penguin@custom@v2",
         "penguin_duo1_m",
-        "Familie duo m 1 ~r~ NEW",
+        "Familie duo m 1 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_duo1_f"] = {
+    ["C2penguin_duo1_f"] = {
         "penguin@custom@v2",
         "penguin_duo1_f",
-        "Familie duo f 1 ~r~ NEW",
+        "Familie duo f 1 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_duo2_f"] = {
+    ["C3penguin_duo2_f"] = {
         "penguin@custom@v2",
         "penguin_duo2_f",
-        "Familie duo f 2 ~r~ NEW",
+        "Familie duo f 2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_duo2_m"] = {
+    ["C4penguin_duo2_m"] = {
         "penguin@custom@v2",
         "penguin_duo2_m",
-        "Familie duo m 2 ~r~ NEW",
+        "Familie duo m 2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose_couple_m"] = {
+    ["C5penguin_pose_couple_m"] = {
         "penguin@custom@v2",
         "penguin_pose_couple_m_v2",
-        "Familie pose couple m ~r~ NEW",
+        "Familie pose couple m ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose_couple_f"] = {
+    ["C6penguin_pose_couple_f"] = {
         "penguin@custom@v2",
         "penguin_pose_couple_f_v2",
-        "Familie pose couple f ~r~ NEW",
+        "Familie pose couple f ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_japanom"] = {
+    ["C7penguin_japanom"] = {
         "penguin@custom@v2",
         "penguin_japanom",
-        "Familie japanom ~r~ NEW",
+        "Familie japanom ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose1_v2"] = {
+    ["C8penguin_pose1_v2"] = {
         "penguin@custom@v2",
         "penguin_pose1_v2",
-        "Familie pose 1 v2 ~r~ NEW",
+        "Familie pose 1 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose2_v2"] = {
+    ["C9penguin_pose2_v2"] = {
         "penguin@custom@v2",
         "penguin_pose2_v2",
-        "Familie pose 2 v2 ~r~ NEW",
+        "Familie pose 2 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["apenguin_pose3_v2"] = {
+    ["D1penguin_pose3_v2"] = {
         "penguin@custom@v2",
         "penguin_pose3_v2",
-        "Familie pose3 v2 ~r~ NEW",
+        "Familie pose3 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["apenguin_pose4_v2"] = {
+    ["D2penguin_pose4_v2"] = {
         "penguin@custom@v2",
         "penguin_pose4_v2",
-        "Familie pose 4 v2 ~r~ NEW",
+        "Familie pose 4 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose5_v2"] = {
+    ["D3penguin_pose5_v2"] = {
         "penguin@custom@v2",
         "penguin_pose5_v2",
-        "Familie pose 5 v2 ~r~ NEW",
+        "Familie pose 5 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose6_v2"] = {
+    ["D4penguin_pose6_v2"] = {
         "penguin@custom@v2",
         "penguin_pose6_v2",
-        "Familie pose 6 v2 ~r~ NEW",
+        "Familie pose 6 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose7_v2"] = {
+    ["D5penguin_pose7_v2"] = {
         "penguin@custom@v2",
         "penguin_pose7_v2",
-        "Familie pose 7 v2 ~r~ NEW",
+        "Familie pose 7 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["apenguin_pose8_v2"] = {
+    ["D6penguin_pose8_v2"] = {
         "penguin@custom@v2",
         "penguin_pose8_v2",
-        "Familie pose 8 v2 ~r~ NEW",
+        "Familie pose 8 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["apenguin_pose9_v2"] = {
+    ["D7penguin_pose9_v2"] = {
         "penguin@custom@v2",
         "penguin_pose9_v2",
-        "Familie pose 9 v2 ~r~ NEW",
+        "Familie pose 9 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose10_v2"] = {
+    ["D8penguin_pose10_v2"] = {
         "penguin@custom@v2",
         "penguin_pose10_v2",
-        "Familie pose 10 v2 ~r~ NEW",
+        "Familie pose 10 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose11_v2"] = {
+    ["D9penguin_pose11_v2"] = {
         "penguin@custom@v2",
         "penguin_pose11_v2",
-        "Familie pose 11 v2 ~r~ NEW",
+        "Familie pose 11 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_pose12_v2"] = {
+    ["E1penguin_pose12_v2"] = {
         "penguin@custom@v2",
         "penguin_pose12_v2",
-        "Familie pose 12 v2 ~r~ NEW",
+        "Familie pose 12 v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_respect"] = {
+
+    ["E2penguin_respect"] = {
         "penguin@custom@v2",
         "penguin_respect",
-        "Familie respect v2 ~r~ NEW",
+        "Familie respect v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["apenguin_sorry1"] = {
+
+    ["E3penguin_sorry1"] = {
         "penguin@custom@v2",
         "penguin_sorry1",
-        "Familie sorry v2 ~r~ NEW",
+        "Familie sorry v2 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_Head"] = {
-        "penguin@custom@v1",
-        "penguinhead",
-        "FamTraining Head",
+    ---- penguin V3 ----
+    ["E4penguin_mppos_pose1"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose1",
+        "Familie pose1 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["E5penguin_mppos_pose2"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose2",
+        "Familie pose2 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["E6penguin_mppos_pose3"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose3",
+        "Familie pose3 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["E7penguin_mppos_pose4"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose4",
+        "Familie pose4 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["E8penguin_mppos_pose5"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose5",
+        "Familie pose5 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["E9penguin_mppos_pose6"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose6",
+        "Familie pose6 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F1penguin_mppos_pose7"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose7",
+        "Familie pose7 v3 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F2penguin_mppos_pose8"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose8",
+        "Familie pose8 v3 ~p~ NEW",
+        AnimationOptions = {
+            Prop = 'prop_cs_ciggy_01',
+            PropBone = 28422,
+            PropPlacement = {0.09, 0.02, 0.0, 5.0, 109.0, 10.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F3penguin_mppos_pose9"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose9",
+        "Familie pose9 v3 ~p~ NEW",
+        AnimationOptions = {
+            Prop = 'prop_cs_ciggy_01',
+            PropBone = 28422,
+            PropPlacement = {0.09, 0.02, 0.0, 5.0, 109.0, 10.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F4penguin_mppos_pose10"] = {
+        "penguin_mppos@pose_model",
+        "penguin_mppos_pose10",
+        "Familie pose10 v3 ~p~ NEW",
+        AnimationOptions = {
+            Prop = "prop_phone_ing_03",
+            PropBone = 28422,
+            PropPlacement = {0.07, 0.03, -0.02, -127.0, -133.0, 2.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ---- penguin V4 ----
+    ["F5penguin_mppos_v4_pose1"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose1",
+        "Familie_mppos_pose1_v4 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F6penguin_mppos_v4_pose2"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose2",
+        "Familie_mppos_pose2_v4 ~p~ NEW",
+        AnimationOptions = {
+            Prop = "prop_cs_ciggy_01",
+            PropBone = 28422,
+            PropPlacement = {0.09, 0.02, 0.0, 5.0, 109.0, 10.0},
+            SecondProp = 'prop_tumbler_01b_bar',
+            SecondPropBone = 60309,
+            SecondPropPlacement = {0.07, 0.01, 0.05, -87.0, 1.0, -9.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F7penguin_mppos_v4_pose3"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose3",
+        "Familie pose3 v4 ~p~ NEW",
+        AnimationOptions = {
+            Prop = "prop_penguin_flag1", ---ธง
+            PropBone = 28422,
+            PropPlacement = {0.44, -0.83, -0.32, -63.0, -72.0, -11.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["F8penguin_mppos_v4_pose4"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose4",
+        "Familie pose4 v4 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["F9penguin_mppos_v4_pose5"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose5",
+        "Familie pose5 v4 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["G1penguin_mppos_v4_pose6"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose6",
+        "Familie pose6 v4 ~p~ NEW",
+        AnimationOptions = {
+            Prop = "ruler",
+            PropBone = 12844,
+            PropPlacement = {0.0, 0.12, 0.01, 0.0, 90.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["G2penguin_mppos_v4_pose7"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose7",
+        "Familie pose7 v4 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_Love"] = {
-        "penguin@custom@v1",
-        "penguinlove",
-        "FamTraining Love",
+    ["G3penguin_mppos_v4_pose8"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_pose8",
+        "Familie pose8 v4 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_standpickpocket"] = {
-        "penguin@custom@v1",
-        "penguin_standpickpocket",
-        "FamTraining standpickpocket",
+    ["G4penguin_mppos_v4_duo1_f"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_duo1_f",
+        "Familie duo1 f v4 ~p~ NEW",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_2_fingers_up"] = {
-        "penguin@custom@v1",
-        "penguin_2_fingers_up",
-        "FamTraining 2 fingers",
+    ["G5penguin_mppos_v4_duo1_m"] = {
+        "penguin_mppos@custom@v4",
+        "penguin_mppos_v4_duo1_m",
+        "Familie duo1 m v4 ~p~ NEW",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ---- penguin V5 ----
+    ["G6penguin_mppos_pose1_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose1_v5",
+        "Familie_pose1_v5",
+        AnimationOptions = {
+            Prop = "flower_neck",
+            PropBone = 24818,
+            PropPlacement = {-0.30, 0.04, 0.0, -3.0, 90.0, 180.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["G7penguin_mppos_pose2_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose2_v5",
+        "Familie_pose2_v5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["G8penguin_mppos_pose3_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose3_v5",
+        "Familie_pose3_v5",
+        AnimationOptions = {
+            Prop = "find",
+            PropBone = 60309,
+            PropPlacement = {0.05, 0.11, -0.01, -4.0, 92.0, -19.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["G9penguin_mppos_pose4_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose4_v5",
+        "Familie_pose4_v5",
+        AnimationOptions = {
+            Prop = "red_card",
+            PropBone = 28422,
+            PropPlacement = {0.11, 0.07, -0.05, -23.0, -61.0, 131.0},
+            SecondProp = 'whistle',
+            SecondPropBone = 60309,
+            SecondPropPlacement = {0.09, 0.04, 0.04, -94.0, 186.0, 40.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["H1penguin_mppos_pose5_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose5_v5",
+        "Familie_pose5_v5",
+        AnimationOptions = {
+            Prop = "yellow_card",
+            PropBone = 28422,
+            PropPlacement = {0.11, 0.07, -0.05, -23.0, -61.0, 131.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["H2penguin_mppos_pose6_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose6_v5",
+        "Familie_pose6_v5",
+        AnimationOptions = {
+            Prop = "watertank",
+            PropBone = 60309,
+            PropPlacement = {0.12, 0.0, 0.09, 181.0, 23.0, -116.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["H3penguin_mppos_pose7_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose7_v5",
+        "Familie_pose7_v5",
+        AnimationOptions = {
+            Prop = "penguin_flag2",
+            PropBone = 28422,
+            PropPlacement = {0.09, -0.4, -0.18, -85.0, 65.0, 20.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["H4penguin_mppos_pose8_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose8_v5",
+        "Familie_pose8_v5",
+        AnimationOptions = {
+            Prop = "logo_label",
+            PropBone = 28422,
+            PropPlacement = {0.2, 0.08, -0.03, -47.0, 128.0, 55.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["H5penguin_mppos_pose9_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose9_v5",
+        "Familie_pose9_v5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["H6penguin_mppos_pose10_v5"] = {
+        "penguin_mppos@custom@v5",
+        "penguin_mppos_pose10_v5",
+        "Familie_pose10_v5",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_pok_cheek"] = {
-        "penguin@custom@v1",
-        "penguin_pok_cheek",
-        "FamTraining pokcheek",
+    ------- V6 penguin ------
+    ["H7penguin_pose1_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose1_v6",
+        "Familie pose1 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["H8penguin_pose2_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose2_v6",
+        "Familie pose2 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["H9penguin_pose3_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose3_v6",
+        "Familie pose3 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I1penguin_pose4_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose4_v6",
+        "Familie pose4 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I2penguin_pose5_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose5_v6",
+        "Familie pose5 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I3penguin_pose6_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose6_v6",
+        "Familie pose6 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I4penguin_pose7_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose7_v6",
+        "Familie pose7 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I5penguin_pose8_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose8_v6",
+        "Familie pose8 ~p~ v6",
+        AnimationOptions = {
+            Prop = 'prop_cs_ciggy_01',
+            PropBone = 28422,
+            PropPlacement = {0.11, 0.03, 0.0, 5.0, 109.0, 90.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I6penguin_pose9_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose9_v6",
+        "Familie pose9 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I7penguin_pose10_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose10_v6",
+        "Familie pose10 ~p~ v6",
+        AnimationOptions = {
+            Prop = "prop_microphone_02",
+            PropBone = 28422,
+            PropPlacement = {0.03, -0.02, -0.03, -60.0, 25.0, -1.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I8penguin_pose11_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose11_v6",
+        "Familie pose11 ~p~ v6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["I9penguin_pose12_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose12_v6",
+        "Familie pose12 ~p~ v6",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_hold_the_cheek"] = {
-        "penguin@custom@v1",
-        "penguin_hold_the_cheek",
-        "FamTraining hold the cheek",
+    ["J1penguin_pose15_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose15_v6",
+        "Familie pose15 ~p~ v6",
+        AnimationOptions = {
+            Prop = "rose",
+            PropBone = 28422,
+            PropPlacement = {0.2, 0.23, 0.0, -52.0, 82.0, 3.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["J2penguin_pose15-2_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose15_v6",
+        "Familie pose15 ~r~ 2 ~p~ v6",
+        AnimationOptions = {
+            Prop = "rose",
+            PropBone = 28422,
+            PropPlacement = {0.2, 0.23, 0.0, -52.0, 82.0, 3.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["J3penguin_pose16_v6"] = {
+        "penguin@mppos@custom@v6",
+        "penguin_mppos_pose16_v6",
+        "Familie pose16 ~p~ v6",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_pose"] = {
-        "penguin@custom@v1",
-        "penguin_pose",
-        "FamTraining pose 1",
+    ["J4penguin_dance_bboy_1"] = {
+        "penguin@dance@bboy",
+        "penguin_dance_bboy_1",
+        "Familie bboy 1 ~p~ v6",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose2"] = {
-        "penguin@custom@v1",
-        "penguin_pose2",
-        "FamTraining pose 2",
+    ["J5penguin_dance_bboy_2"] = {
+        "penguin@dance@bboy",
+        "penguin_dance_bboy_2",
+        "Familie bboy 2 ~p~ v6",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose3"] = {
-        "penguin@custom@v1",
-        "penguin_pose3",
-        "FamTraining pose 3",
+    ---- penguin fast ----
+    ["J6penguin_mppos_fast_pose1"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose1",
+        "Familie pose1 ~r~ fast",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose4"] = {
-        "penguin@custom@v1",
-        "penguin_pose4",
-        "FamTraining pose 4",
+    ["J7penguin_mppos_fast_pose2"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose2",
+        "Familie pose2 ~r~ fast",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose5"] = {
-        "penguin@custom@v1",
-        "penguin_pose5",
-        "FamTraining pose 5",
+    ["J8penguin_mppos_fast_pose3"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose3",
+        "Familie pose3 ~r~ fast",
+        AnimationOptions = {
+            Prop = "sachet",
+            PropBone = 60309,
+            PropPlacement = {0.08, 0.04, 0.01, -66.0, 160.0, 4.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["J9penguin_mppos_fast_pose4"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose4",
+        "Familie pose4 ~r~ fast",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose6"] = {
-        "penguin@custom@v1",
-        "penguin_pose6",
-        "FamTraining pose 6",
+    ["K1penguin_mppos_fast_pose5"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose5",
+        "Familie pose5 ~r~ fast",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose7"] = {
-        "penguin@custom@v1",
-        "penguin_pose7",
-        "FamTraining pose 7",
+    ["K2penguin_mppos_fast_pose6"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose6",
+        "Familie pose6 ~r~ fast",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K3penguin_mppos_fast_pose7"] = {
+        "penguin_mppos@fast@pose",
+        "penguin_mppos_fast_pose7",
+        "Familie pose7 ~r~ fast",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ---- penguin V7 ----
+    ["K4penguin_v7_pose1"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose1_v7",
+        "Familie pose1 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K5penguin_v7_pose2"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose2_v7",
+        "Familie pose2 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K6penguin_v7_pose3"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose3_v7",
+        "Familie pose3 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K7penguin_v7_pose4"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose4_v7",
+        "Familie pose4 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K8penguin_v7_pose5"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose5_v7",
+        "Familie pose5 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["K9penguin_v7_pose6"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose6_v7",
+        "Familie pose6 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["L1penguin_v7_pose7"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose7_v7",
+        "Familie pose7 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["L2penguin_v7_pose8"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose8_v7",
+        "Familie pose8 ~r~ V7",
+        AnimationOptions = {
+            Prop = "blanket",
+            PropBone = 24818,
+            PropPlacement = {-0.8, 0.27, 0.09, 1.0, 0.0, 160.0},
+            SecondProp = 'pillow',
+            SecondPropBone = 24818,
+            SecondPropPlacement = {0.44, -0.02, -0.09, 0.0, 0.0, 160.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["L3penguin_v7_pose9"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose9_v7",
+        "Familie pose9 ~r~ V7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["L4penguin_v7_pose9"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose9_v7",
+        "Familie pose9_1 ~r~ V7",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
-    ["Apenguin_pose8"] = {
-        "penguin@custom@v1",
-        "penguin_pose8",
-        "FamTraining pose 8",
+    ["L5penguin_v7_pose10"] = {
+        "penguin@mppos@custom@v7",
+        "penguin_mppos_pose10_v7",
+        "Familie pose10 ~r~ V7",
         AnimationOptions = {
+            Prop = "pillow_1",
+            PropBone = 24818,
+            PropPlacement = {0.08, 0.21, 0.0, -18.0, 90.0, 180.0},
             EmoteLoop = true,
-            EmoteMoving = true
+            EmoteMoving = false
         }
     },
-    ["Apenguin_pose9"] = {
-        "penguin@custom@v1",
-        "penguin_pose9",
-        "FamTraining pose 9",
+    ["L6penguin_sharks"] = {
+        "penguin@sharks",
+        "penguin_sharks",
+        "Familie ~b~ SHARKS",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_pose10"] = {
-        "penguin@custom@v1",
-        "penguin_pose10",
-        "FamTraining pose 10",
-        AnimationOptions = {
-            EmoteLoop = true,
-            EmoteMoving = true
-        }
-    },
-    ["Apenguin_dab"] = {
-        "penguin@custom@v1",
-        "penguin_dab",
-        "FamTraining dab",
+    -- ["L7penguin_sharks"] = {"penguin@sharks", "penguin_sharks", "Familie ~b~ SHARKS ~r~ backdrop", AnimationOptions =
+    -- {
+    --     Prop = "sharks",
+    --     PropBone = 13700,
+    --     PropPlacement = {0.0, 0.60, 0.18, 0.0, 0.0, 180.0},
+    --     EmoteLoop = true,
+    --     EmoteMoving = false,
+    -- }},
+    ["L8penguin_cut1"] = {
+        "penguin@sharks@cut",
+        "cut_1",
+        "Familie ~b~ SHARKS ~r~ CUT 1",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = false
         }
     },
-    ["Apenguin_dab1"] = {
-        "penguin@custom@v1",
-        "penguin_dab1",
-        "FamTraining dab 1",
+    ["L9penguin_cut2"] = {
+        "penguin@sharks@cut",
+        "cut_2",
+        "Familie ~b~ SHARKS ~r~ CUT 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["M1penguin_cut3"] = {
+        "penguin@sharks@cut",
+        "cut_3",
+        "Familie ~b~ SHARKS ~r~ CUT 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["M2penguin_cut4"] = {
+        "penguin@sharks@cut",
+        "cut_4",
+        "Familie ~b~ SHARKS ~r~ CUT 4",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+
+    ["M3penguin_cut5"] = {
+        "penguin@sharks@cut",
+        "cut_5",
+        "Familie ~b~ SHARKS ~r~ CUT 5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ---- penguin pui mui ----
+
+    ["M4penguin_puimui"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui",
+        "Familie ~r~ puimui",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["M5penguin_puimui_cut1"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut1",
+        "Familie ~r~ puimui ~b~ 1",
+        AnimationOptions = {
+            -- Prop = 'penguin_heart',
+            -- PropBone = 24818,
+            -- PropPlacement = {0.19, 0.33, 0.0, 1.0, 90.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["M6penguin_puimui_cut2"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut2",
+        "Familie ~r~ puimui ~b~ 2",
         AnimationOptions = {
             EmoteLoop = true,
             EmoteMoving = true
         }
     },
+    ["M7penguin_puimui_cut3"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut3",
+        "Familie ~r~ puimui ~b~ 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["M8penguin_puimui_cut4"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut4",
+        "Familie ~r~ puimui ~b~ 4",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["M9penguin_puimui_cut5"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut5",
+        "Familie ~r~ puimui ~b~ 5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["N1penguin_puimui_cut6"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut7",
+        "Familie ~r~ puimui ~b~ 6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["N2penguin_puimui_cut7"] = {
+        "penguin@puimui@dance",
+        "penguin_puimui_cut8",
+        "Familie ~r~ puimui ~b~ 7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ------- penguin khmfaek ------
+    ["N3penguin_Khm_faek1"] = {
+        "penguin@khm@faek",
+        "Khm_faek_01",
+        "Familie ~r~ Khm_faek 1",
+        AnimationOptions = {
+            Prop = "penguin_khmfaek",
+            PropBone = 57005,
+            PropPlacement = {0.1, -0.03, -0.02, -82.0, -4.0, -8.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["N4penguin_Khm_faek2"] = {
+        "penguin@khm@faek",
+        "Khm_faek_02",
+        "Familie ~r~ Khm_faek 2",
+        AnimationOptions = {
+            Prop = "penguin_khmfaek",
+            PropBone = 57005,
+            PropPlacement = {0.1, -0.03, -0.02, -82.0, -4.0, -8.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["N5penguin_Khm_faek3"] = {
+        "penguin@khm@faek",
+        "Khm_faek_03",
+        "Familie ~r~ Khm_faek 3",
+        AnimationOptions = {
+            Prop = "penguin_khmfaek",
+            PropBone = 57005,
+            PropPlacement = {0.12, -0.08, -0.04, -76.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ------- penguin V8 ------
+    ["N6penguin_mppos_p1"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p1",
+        "Familie ~r~ 1 V8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["N7penguin_mppos_p2"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p2",
+        "Familie ~r~ 2 V8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["N8penguin_mppos_p3"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p3",
+        "Familie ~r~ 3 V8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ["N9penguin_mppos_p4"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p4",
+        "Familie ~r~ 4 V8",
+        AnimationOptions = {
+            Prop = "rose",
+            PropBone = 57005,
+            PropPlacement = {0.12, 0.18, -0.02, -93.0, 131.0, 8.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["O1penguin_mppos_p5"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p5",
+        "Familie ~r~ 5 V8",
+        AnimationOptions = {
+            Prop = "rose",
+            PropBone = 57005,
+            PropPlacement = {0.12, 0.18, -0.02, -93.0, 131.0, 8.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["O2penguin_mppos_p16"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p16",
+        "Familie ~r~ 6 V8",
+        AnimationOptions = {
+            Prop = "rose",
+            PropBone = 57005,
+            PropPlacement = {0.12, 0.18, -0.02, -93.0, 131.0, 8.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["O3penguin_mppos_p6"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p6",
+        "Familie ~r~ 7 V8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["O4penguin_mppos_p15"] = {
+        "penguin@mppos@custom@v8",
+        "penguin_mppos_p15",
+        "Familie ~r~ 8 V8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+
     ["drink"] = {
         "mp_player_inteat@pnq",
         "loop",
@@ -3066,7 +5253,8 @@ DP.Emotes = {
             PropPlacement = {0.0800003, -0.004999998, -0.035, 175.5002, 311.0003, 232.0},
             EmoteLoop = true,
             EmoteMoving = false
-        }
+        },
+        type = 'sit',
     },
     ["Nekositchair8"] = {
         "anim@amb@nightclub@smoking@",
@@ -3078,7 +5266,8 @@ DP.Emotes = {
             PropPlacement = {0.0800003, -0.004999998, -0.035, 175.5002, 311.0003, 232.0},
             EmoteLoop = true,
             EmoteMoving = false
-        }
+        },
+        type = 'sit',
     },
     ["Nekodrink2"] = {
         "friends@frl@ig_1",
@@ -3193,9 +5382,9 @@ DP.Emotes = {
         "ig_8_huff_gas_player",
         "Familie Smell 2",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3205,9 +5394,9 @@ DP.Emotes = {
         "flinch_loop_underfire",
         "Familie Fear",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3217,9 +5406,9 @@ DP.Emotes = {
         "001946_01_gc_fras_v2_ig_5_base",
         "Familie Wipe",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = true
         }
@@ -3229,9 +5418,9 @@ DP.Emotes = {
         "leadin_loop_idle_a_stripper_a",
         "Familie Sit Chair 9",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3241,9 +5430,9 @@ DP.Emotes = {
         "leadin_loop_idle_a_wade",
         "Familie Sit Mafia 2",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3253,9 +5442,9 @@ DP.Emotes = {
         "male_one_handed_a",
         "Familie Cheer 2",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3265,9 +5454,9 @@ DP.Emotes = {
         "male_two_handed_a",
         "Familie Cheer 3",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -3277,9 +5466,9 @@ DP.Emotes = {
         "leadin_loop",
         "Familie Lean 6",
         AnimationOptions = {
-            --Prop = 'prop_cigar_03',
-            --PropBone = 13700,
-            --PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
+            -- Prop = 'prop_cigar_03',
+            -- PropBone = 13700,
+            -- PropPlacement = {0.03999992, 0.03, 0.015, 0.0, 78.3002, 180},
             EmoteLoop = true,
             EmoteMoving = false
         }
@@ -5693,6 +7882,10 @@ DP.Emotes = {
             EmoteMoving = true
         }
     },
+
+
+
+
     ["bird"] = {"random@peyote@bird", "wakeup", "Bird"},
     ["chicken"] = {
         "random@peyote@chicken",
@@ -5798,7 +7991,7 @@ DP.Emotes = {
     ["smokeweed"] = {"MaleScenario", "WORLD_HUMAN_DRUG_DEALER", "Smoke Weed"},
     ["statue"] = {"Scenario", "WORLD_HUMAN_HUMAN_STATUE", "Statue"},
     ["sunbathe3"] = {"Scenario", "WORLD_HUMAN_SUNBATHE", "Sunbathe 3"},
-    --["sunbatheback"] = {"Scenario", "WORLD_HUMAN_SUNBATHE_BACK", "Sunbathe Back"},
+    -- ["sunbatheback"] = {"Scenario", "WORLD_HUMAN_SUNBATHE_BACK", "Sunbathe Back"},
     ["weld"] = {"Scenario", "WORLD_HUMAN_WELDING", "Weld"},
     ["windowshop"] = {"Scenario", "WORLD_HUMAN_WINDOW_SHOP_BROWSE", "Window Shop"},
     ["yoga"] = {"Scenario", "WORLD_HUMAN_YOGA", "Yoga"},
@@ -5920,6 +8113,31 @@ DP.PropEmotes = {
             EmoteMoving = true
         }
     },
+    ["A001penguin_om_chong_ruai1"] = {"penguin@dance@om_chong_ruai", "penguin_om_chong_ruai1", "โอม จง รวย 1", AnimationOptions =
+    {
+        Prop = "pg_om_chong_ruai",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, -0.330, 0.0, 0.0, 180.0},
+        --
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["A002penguin_om_chong_ruai2"] = {"penguin@dance@om_chong_ruai", "penguin_om_chong_ruai2", "โอม จง รวย 2", AnimationOptions =
+    {
+        Prop = "pg_om_chong_ruai1",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, -0.330, 0.0, 0.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["A003penguin_om_chong_ruai3"] = {"penguin@dance@om_chong_ruai", "penguin_om_chong_ruai3", "โอม จง รวย 3", AnimationOptions =
+    {
+        Prop = "pg_om_chong_ruai2",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, -0.330, 0.0, 0.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
     ["rose"] = {
         "anim@heists@humane_labs@finale@keycards",
         "ped_a_enter_loop",
@@ -5932,30 +8150,42 @@ DP.PropEmotes = {
             EmoteMoving = true
         }
     },
-       ["smoke2"] = {"amb@world_human_aa_smoke@male@idle_a", "idle_c", "Smoke 2", AnimationOptions =
-       {
-           Prop = 'prop_cs_ciggy_01',
-           PropBone = 28422,
-           PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-           EmoteLoop = true,
-           EmoteMoving = true,
-       }},
-       ["smoke3"] = {"amb@world_human_aa_smoke@male@idle_a", "idle_b", "Smoke 3", AnimationOptions =
-       {
-           Prop = 'prop_cs_ciggy_01',
-           PropBone = 28422,
-           PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-           EmoteLoop = true,
-           EmoteMoving = true,
-       }},
-       ["smoke4"] = {"amb@world_human_smoking@female@idle_a", "idle_b", "Smoke 4", AnimationOptions =
-       {
-           Prop = 'prop_cs_ciggy_01',
-           PropBone = 28422,
-           PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-           EmoteLoop = true,
-           EmoteMoving = true,
-       }},
+    ["smoke2"] = {
+        "amb@world_human_aa_smoke@male@idle_a",
+        "idle_c",
+        "Smoke 2",
+        AnimationOptions = {
+            Prop = "prop_cs_ciggy_01",
+            PropBone = 28422,
+            PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["smoke3"] = {
+        "amb@world_human_aa_smoke@male@idle_a",
+        "idle_b",
+        "Smoke 3",
+        AnimationOptions = {
+            Prop = "prop_cs_ciggy_01",
+            PropBone = 28422,
+            PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["smoke4"] = {
+        "amb@world_human_smoking@female@idle_a",
+        "idle_b",
+        "Smoke 4",
+        AnimationOptions = {
+            Prop = "prop_cs_ciggy_01",
+            PropBone = 28422,
+            PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
     ["bong"] = {
         "anim@safehouse@bong",
         "bong_stage3",
@@ -6014,22 +8244,30 @@ DP.PropEmotes = {
             EmoteMoving = true
         }
     },
-       ["whiskey"] = {"amb@world_human_drinking@coffee@male@idle_a", "idle_c", "Whiskey", AnimationOptions =
-       {
-           Prop = 'prop_drink_whisky',
-           PropBone = 28422,
-           PropPlacement = {0.01, -0.01, -0.06, 0.0, 0.0, 0.0},
-           EmoteLoop = true,
-           EmoteMoving = true,
-       }},
-       ["beer"] = {"amb@world_human_drinking@coffee@male@idle_a", "idle_c", "Beer", AnimationOptions =
-       {
-           Prop = 'prop_amb_beer_bottle',
-           PropBone = 28422,
-           PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-           EmoteLoop = true,
-           EmoteMoving = true,
-       }},
+    ["whiskey"] = {
+        "amb@world_human_drinking@coffee@male@idle_a",
+        "idle_c",
+        "Whiskey",
+        AnimationOptions = {
+            Prop = "prop_drink_whisky",
+            PropBone = 28422,
+            PropPlacement = {0.01, -0.01, -0.06, 0.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["beer"] = {
+        "amb@world_human_drinking@coffee@male@idle_a",
+        "idle_c",
+        "Beer",
+        AnimationOptions = {
+            Prop = "prop_amb_beer_bottle",
+            PropBone = 28422,
+            PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
     ["cup"] = {
         "amb@world_human_drinking@coffee@male@idle_a",
         "idle_c",
@@ -6098,14 +8336,18 @@ DP.PropEmotes = {
             EmoteMoving = true
         }
     },
-       ["wine"] = {"anim@heists@humane_labs@finale@keycards", "ped_a_enter_loop", "Wine", AnimationOptions =
-       {
-           Prop = 'prop_drink_redwine',
-           PropBone = 18905,
-           PropPlacement = {0.10, -0.03, 0.03, -100.0, 0.0, -10.0},
-           EmoteMoving = true,
-           EmoteLoop = true
-       }},
+    ["wine"] = {
+        "anim@heists@humane_labs@finale@keycards",
+        "ped_a_enter_loop",
+        "Wine",
+        AnimationOptions = {
+            Prop = "prop_drink_redwine",
+            PropBone = 18905,
+            PropPlacement = {0.10, -0.03, 0.03, -100.0, 0.0, -10.0},
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
     ["flute"] = {
         "anim@heists@humane_labs@finale@keycards",
         "ped_a_enter_loop",
@@ -6118,14 +8360,18 @@ DP.PropEmotes = {
             EmoteLoop = true
         }
     },
-       ["champagne"] = {"anim@heists@humane_labs@finale@keycards", "ped_a_enter_loop", "Champagne", AnimationOptions =
-       {
-           Prop = 'prop_drink_champ',
-           PropBone = 18905,
-           PropPlacement = {0.10, -0.03, 0.03, -100.0, 0.0, -10.0},
-           EmoteMoving = true,
-           EmoteLoop = true
-       }},
+    ["champagne"] = {
+        "anim@heists@humane_labs@finale@keycards",
+        "ped_a_enter_loop",
+        "Champagne",
+        AnimationOptions = {
+            Prop = "prop_drink_champ",
+            PropBone = 18905,
+            PropPlacement = {0.10, -0.03, 0.03, -100.0, 0.0, -10.0},
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
     ["cigar"] = {
         "amb@world_human_smoking@male@male_a@enter",
         "enter",
@@ -6439,6 +8685,18 @@ DP.PropEmotes = {
             PropPlacement = {0.0, 0.0, -0.01, 90.0, 0.0, 0.0},
             EmoteLoop = true,
             EmoteMoving = true
+        }
+    },
+    ["FamBomb"] = {
+        "familiecity@boom",
+        "familiecity_boom",
+        "familiecity ~r~ BOOM",
+        AnimationOptions = {
+            Prop = "fam_boom",
+            PropBone = 57005,
+            PropPlacement = {0.12, -0.03, -0.12, 19.0, 50.0, 12.0},
+            EmoteLoop = true,
+            EmoteMoving = false
         }
     }
 }

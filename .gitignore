@@ -1,0 +1,6 @@
+
+*.ytyp
+*.ydr
+*.ytd
+
+stream/*

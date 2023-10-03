@@ -20,8 +20,8 @@ Config = {
 -- You can change the header image for the f3 menu here
 -- Use a 512 x 128 image!
 -- NOte this might cause an issue of the image getting stuck on peoples screens
-	CustomMenuEnabled = false,
-	MenuImage = "https://i.imgur.com/kgzvDwQ.png",
+    CustomMenuEnabled = true,
+    MenuImage = "https://i.imgur.com/E5xXYQU.png",
 -- You can change the menu position here
 	MenuPosition = "right", -- (left, right)
 -- You can disable the Ragdoll keybinding here.
@@ -33,7 +33,7 @@ Config = {
 	WalkingStylesEnabled = true,	
 -- You can disable the Shared Emotes here.
     SharedEmotesEnabled = true,
-    CheckForUpdates = true,
+    CheckForUpdates = false,
 -- If you have the SQL imported enable this to turn on keybinding.
     SqlKeybinding = false,
 }
