@@ -3,8 +3,6 @@ local AnimationDuration = -1
 local ChosenAnimation = ""
 local ChosenDict = ""
 local IsInAnimation = false
-local MostRecentChosenAnimation = ""
-local MostRecentChosenDict = ""
 local MovementType = 0
 local PlayerGender = "male"
 local PlayerHasProp = false
@@ -65,28 +63,9 @@ end)
 
 Citizen.CreateThread(function()
     TriggerEvent('chat:addSuggestion', '/e', 'Play an emote', {{ name="emotename", help="dance, camera, sit or any valid emote."}})
-    TriggerEvent('chat:addSuggestion', '/e', 'Play an emote', {{ name="emotename", help="dance, camera, sit or any valid emote."}})
     TriggerEvent('chat:addSuggestion', '/emote', 'Play an emote', {{ name="emotename", help="dance, camera, sit or any valid emote."}})
-    if Config.SqlKeybinding then
-      TriggerEvent('chat:addSuggestion', '/emotebind', 'Bind an emote', {{ name="key", help="num4, num5, num6, num7. num8, num9. Numpad 4-9!"}, { name="emotename", help="dance, camera, sit or any valid emote."}})
-      TriggerEvent('chat:addSuggestion', '/emotebinds', 'Check your currently bound emotes.')
-    end
-    TriggerEvent('chat:addSuggestion', '/emotemenu', 'Open dpemotes menu (F3) by default.')
     TriggerEvent('chat:addSuggestion', '/emotes', 'List available emotes.')
-    TriggerEvent('chat:addSuggestion', '/walk', 'Set your walkingstyle.', {{ name="style", help="/walks for a list of valid styles"}})
-    TriggerEvent('chat:addSuggestion', '/walks', 'List available walking styles.')
 end)
-
-RegisterCommand('e', function(source, args, raw) EmoteCommandStart(source, args, raw) end)
-RegisterCommand('emote', function(source, args, raw) EmoteCommandStart(source, args, raw) end)
-if Config.SqlKeybinding then
-  RegisterCommand('emotebind', function(source, args, raw) EmoteBindStart(source, args, raw) end)
-  RegisterCommand('emotebinds', function(source, args, raw) EmoteBindsStart(source, args, raw) end)
-end
-RegisterCommand('emotemenu', function(source, args, raw) OpenEmoteMenu() end)
-RegisterCommand('emotes', function(source, args, raw) EmotesOnCommand() end)
-RegisterCommand('walk', function(source, args, raw) WalkCommandStart(source, args, raw) end)
-RegisterCommand('walks', function(source, args, raw) WalksOnCommand() end)
 
 AddEventHandler('onResourceStop', function(resource)
   if resource == GetCurrentResourceName() then
@@ -307,8 +286,39 @@ end
 ------ This is the major function for playing emotes! -----------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
-function OnEmotePlay(EmoteName)
+function DumpTable(table, nb)
+  if nb == nil then
+      nb = 0
+  end
 
+  if type(table) == 'table' then
+      local s = ''
+      for i = 1, nb + 1, 1 do
+          s = s .. "    "
+      end
+
+      s = '{\n'
+      for k, v in pairs(table) do
+          if type(k) ~= 'number' then
+              k = '"' .. k .. '"'
+          end
+          for i = 1, nb, 1 do
+              s = s .. "    "
+          end
+          s = s .. '[' .. k .. '] = ' .. DumpTable(v, nb + 1) .. ',\n'
+      end
+
+      for i = 1, nb, 1 do
+          s = s .. "    "
+      end
+
+      return s .. '}'
+  else
+      return tostring(table)
+  end
+end
+
+function OnEmotePlay(EmoteName)
   InVehicle = IsPedInAnyVehicle(PlayerPedId(), true)
   if not Config.AllowedInCars and InVehicle == 1 then
     return
@@ -444,3 +454,11 @@ function OnEmotePlay(EmoteName)
   end
   return true
 end
+
+
+function OnPropsEmotesPlay(id)
+  local EmoteName = DP.PropEmotes[id]
+  OnEmotePlay(EmoteName)
+end
+
+exports("OnPropsEmotesPlay", OnPropsEmotesPlay)

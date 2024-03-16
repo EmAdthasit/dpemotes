@@ -389,7 +389,130 @@ DP.Shared = {
 }
 
 DP.Dances = {
-    ["00Glap_Look_at_me"] = {"glap@ashley-look-at-me_solo", "ashley-look-at-me_solo", "Glap Ashley look at me ! ~r~ Tiktok", AnimationOptions =
+    ["000000Glap_slick-back"] = {"glap@slick-back", "slick-back", "Glap Slick Back ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["000000Glap_stefan-shake"] = {"glap@stefan-shake", "stefan-shake", "Glap Stefan Shake ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["000000Toothless_Dance"] = {"toothless@dance", "toothless-dance", "Toothless Dance", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+
+    ["000000Glap_mae-nong-all-new"] = {"glap@mae-nong-all-new", "mae-nong-all-new", "Glap Mae Nong All New ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["000000Glap_hua-rai-tood"] = {"glap@hua-rai-tood", "hua-rai-tood", "Glap Hua Rai Tood ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["000000Glap_hua-rai-tood-loop"] = {"glap@hua-rai-tood-loop", "hua-rai-tood-loop", "Glap Hua Rai Tood ~r~ Loop", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["000000Glap_kit-hod-ay-nae-der"] = {"glap@kit-hod-ay-nae-der", "kit-hod-ay-nae-der", "Glap Kit Hod Ay Nae Der ~r~ Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+
+
+    
+
+    ["0000Jarp_Stephan_01"] = {"jarp@stephan_1", "jarp@stephan_1_clip", "Jarp Stephan 1 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+    ["0000Jarp_Stephan_02"] = {"jarp@stephan_2", "jarp@stephan_2_clip", "Jarp Stephan 2 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+    ["0000Jarp_Jazz_01"] = {"jarp_pjazz4g", "jarp_pjazz1", "Jarp PJazz 1 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+    ["0000Jarp_Jazz_02"] = {"jarp_pjazz4g", "jarp_pjazz2", "Jarp PJazz 2 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+    ["0000Jarp_Jazz_03"] = {"jarp_pjazz4g", "jarp_pjazz3", "Jarp PJazz 3 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+    ["0000Jarp_Jazz_04"] = {"jarp_pjazz4g", "jarp_pjazz4", "Jarp PJazz 4 ~o~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},	
+
+    ["0000Jarp_Jutsu"] = {"export@naruto", "naruto", "Jarp Jutsu ~o~Naruto", AnimationOptions =
+   {
+        EmoteLoop = true,
+   }},	
+       ["0000Jarp_Yuki"] = {"jarp_yuki", "jarp_yuki_clip", "Jarp To Te Ti ~o~Tiktok", AnimationOptions =
+   {
+        EmoteLoop = true,
+
+   }},	 
+     ["0000Jarp_Headbang"] = {"jarp_headbang", "jarp_headbang_clip", "Jarp Headbang ~o~Travis", AnimationOptions =
+   {
+        EmoteLoop = true,
+   }},	 
+    ["0000Jarp_Basket"] = {"jarp_basketanim", "jarp_basketanim_clip", "Jarp BasketBall ~o~ Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+		Prop = "prop_bskball_01",
+        PropBone = 28422,
+        PropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+        EmoteMoving = false,
+
+   }},	 
+      ["0000Jarp_Bat"] = {"jarp_bat", "jarp_bat_clip", "Jarp Bat ~o~ Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+		Prop = "w_me_bat",
+        PropBone = 60309,
+        PropPlacement = {0.03,-0.15,0.06,-284.82,-45.78,0.0},
+        EmoteMoving = false,
+
+   }},	
+     ["0000Jarp_Sax"] = {"jarp_saxsophone", "jarp_saxsophone_clip", "Jarp Saxsophone ~o~ Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+		Prop = "jarp_prop_saxsophone",
+        PropBone = 28422,
+        PropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+
+   }},	
+    ["0000oud_kradeub"] = {"oudoud@kradeub", "oudoud_kradeub", "Kradeab Cute", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false
+    }},
+    ["oudoudrum2"] = {"oudoud@rum2", "oudoud_rum2", "DekChangPuna ~r~Tiktok ", AnimationOptions =
+    {
+        EmoteLoop = true,
+    }},
+    ["oudoudkhongtrae"] = {"oudoud@khongtrae", "oudoud_khongtrae", "Khongtrae ~r~Tiktok", AnimationOptions =
+    {
+        EmoteLoop = true,
+    }},
+    ["00Glap_Look_at_me"] = {"glap@ashley-look-at-me_solo", "ashley-look-at-me_solo", "Glap Ashley look at me ! ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
@@ -435,22 +558,22 @@ DP.Dances = {
         EmoteLoop = true,
         EmoteMoving = false,   
     }},
-    ["00Glap_Gummy-yummy"] = {"glap@gummy-yummy", "gummy-yummy", "Glap Gummy Yummy ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Gummy-yummy"] = {"glap@gummy-yummy", "gummy-yummy", "Glap Gummy Yummy ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }},    
-    ["00Glap_Aomanongma"] = {"glap@aomanongma", "aomanongma", "Glap Ao ma nong ma ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Aomanongma"] = {"glap@aomanongma", "aomanongma", "Glap Ao ma nong ma ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }}, 
-    ["00Glap_Maklaewkrap"] = {"glap@maklaewkrap", "maklaewkrap", "Glap Mak Laew Krap ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Maklaewkrap"] = {"glap@maklaewkrap", "maklaewkrap", "Glap Mak Laew Krap ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }},    
-	["00Glap_If-we-ever-broke-up"] = {"glap@if-we-ever-broke-up", "if-we-ever-broke-up", "Glap If we ever broke up ~r~ Tiktok", AnimationOptions =
+	["00Glap_If-we-ever-broke-up"] = {"glap@if-we-ever-broke-up", "if-we-ever-broke-up", "Glap If we ever broke up ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
@@ -460,22 +583,22 @@ DP.Dances = {
         EmoteLoop = true,
         EmoteMoving = false,
     }}, 
-    ["00Glap_What-it-is"] = {"glap@what-it-is", "what-it-is", "Glap What it is ~r~ Tiktok", AnimationOptions =
+    ["00Glap_What-it-is"] = {"glap@what-it-is", "what-it-is", "Glap What it is ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }},    
-    ["00Glap_Kaipalo-fix"] = {"glap@kaipalo_fix", "kaipalo-fix", "Glap Kaipalo ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Kaipalo-fix"] = {"glap@kaipalo_fix", "kaipalo-fix", "Glap Kaipalo ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }},    
-    ["00Glap_Jep-meua-rai"] = {"glap@jep-meua-rai", "jep-meua-rai", "Glap Jep meua rai ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Jep-meua-rai"] = {"glap@jep-meua-rai", "jep-meua-rai", "Glap Jep meua rai ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
     }},     
-    ["00Glap_Nok-grong-hua-juk"] = {"glap@nok-grong-hua-juk", "nok-grong-hua-juk", "Glap Nok grong hua juk ~r~ Tiktok", AnimationOptions =
+    ["00Glap_Nok-grong-hua-juk"] = {"glap@nok-grong-hua-juk", "nok-grong-hua-juk", "Glap Nok grong hua juk ~r~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
@@ -539,7 +662,7 @@ DP.Dances = {
 	
 	
 	
-	["0A1Glap_Boy's-liar"] = {"glap@boy's-liar", "boy's-liar_clip", "~b~Songkran~s~ Tiktok", AnimationOptions =
+	["0A1Glap_Boy's-liar"] = {"glap@boy's-liar", "boy's-liar_clip", "~b~Songkran~s~ Tikato", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
@@ -2030,7 +2153,7 @@ DP.Dances = {
     ["T1"] = {
         "custom@dont_start",
         "dont_start",
-        "TikTok 1",
+        "Tikato 1",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2039,7 +2162,7 @@ DP.Dances = {
     ["T2"] = {
         "custom@renegade",
         "renegade",
-        "TikTok 2",
+        "Tikato 2",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2048,7 +2171,7 @@ DP.Dances = {
     ["T3"] = {
         "custom@savage",
         "savage",
-        "TikTok 3",
+        "Tikato 3",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2057,7 +2180,7 @@ DP.Dances = {
     ["T4"] = {
         "custom@sayso",
         "sayso",
-        "TikTok 4",
+        "Tikato 4",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2066,7 +2189,7 @@ DP.Dances = {
     ["T5"] = {
         "custom@take_l",
         "take_l",
-        "TikTok 5",
+        "Tikato 5",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2075,7 +2198,7 @@ DP.Dances = {
     ["T6"] = {
         "custom@rickroll",
         "rickroll",
-        "TikTok 6",
+        "Tikato 6",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2084,7 +2207,7 @@ DP.Dances = {
     ["T7"] = {
         "custom@orangejustice",
         "orangejustice",
-        "TikTok 7",
+        "Tikato 7",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2093,7 +2216,7 @@ DP.Dances = {
     ["T8"] = {
         "custom@floss",
         "floss",
-        "TikTok 8",
+        "Tikato 8",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2102,7 +2225,7 @@ DP.Dances = {
     ["T9"] = {
         "custom@crossbounce",
         "crossbounce",
-        "TikTok 9",
+        "Tikato 9",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2111,7 +2234,7 @@ DP.Dances = {
     ["Tt10"] = {
         "custom@toosie_slide",
         "toosie_slide",
-        "TikTok 10",
+        "Tikato 10",
         AnimationOptions = {
             EmoteMoving = false,
             EmoteLoop = true
@@ -2497,6 +2620,915 @@ DP.Dances = {
 }
 
 DP.Emotes = {
+    ["!kidhod_hw01"] = {"kidhod_vectorpose01", "clip", "Kidhod Halloween 1", AnimationOptions =
+    {
+        Prop = "halloweenvector",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw02"] = {"kidhod_vectorpose02", "clip", "Kidhod Halloween 2", AnimationOptions =
+    {
+        Prop = "halloweenvector",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw03"] = {"kidhod_hangman1", "clip", "Kidhod Halloween 3", AnimationOptions =
+    {
+        Prop = "treehangman",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw04"] = {"kidhod_hangman2", "clip", "Kidhod Halloween 4", AnimationOptions =
+    {
+        Prop = "treehangman",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw05"] = {"kidhod_handg1", "clip", "Kidhod Halloween 5", AnimationOptions =
+    {
+        Prop = "handhalloween",
+        PropBone = 24818,
+        PropPlacement = {0.1, 0.2, 0.15,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw06"] = {"kidhod_spiderweb1", "clip", "Kidhod Halloween 6", AnimationOptions =
+    {
+        Prop = "spider_web",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw07"] = {"kidhod_rogers1", "clip", "Kidhod Halloween 7", AnimationOptions =
+    {
+        Prop = "spearhalloween2",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw08"] = {"kidhod_rogers2", "clip", "Kidhod Halloween 8", AnimationOptions =
+    {
+        Prop = "spearhalloween",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw09"] = {"kidhod_gpkh1", "clip", "Kidhod Halloween 9", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw091"] = {"kidhod_gpkh2", "clip", "Kidhod Halloween 10", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw092"] = {"kidhod_gpkh3", "clip", "Kidhod Halloween 11", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw093"] = {"kidhod_gpkh4", "clip", "Kidhod Halloween 12", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw094"] = {"kidhod_gpkh5", "clip", "Kidhod Halloween 13", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw095"] = {"kidhod_gpkh6", "clip", "Kidhod Halloween 14", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw096"] = {"kidhod_gpkh7", "clip", "Kidhod Halloween 15", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw097"] = {"kidhod_gpkh8", "clip", "Kidhod Halloween 16", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["!kidhod_hw098"] = {"kidhod_gpkh9", "clip", "Kidhod Halloween 17", AnimationOptions =
+    {
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0,0.0, 0.0, -180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    --Jarp
+    ["0000jarp_cn_newyear_1"] = {"export@jarp_cn_newyear_1", "jarp_cn_newyear_1", "Jarp Chinese New Year 1 ~o~Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+        Prop = "jarp_cn_prop_06",
+        PropBone = 57005,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0,0.0,0.0},
+   }},	 
+    ["0000jarp_cn_newyear_2"] = {"export@jarp_cn_newyear_2", "jarp_cn_newyear_2", "Jarp Chinese New Year 2 ~o~Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+		Prop = "jarp_cn_prop_1",
+        PropBone = 57005,
+        PropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+		
+		SecondProp = 'jarp_cn_prop_2',
+        SecondPropBone = 18905,
+        SecondPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+		
+		ThirdProp = 'jarp_cn_prop_3',
+        ThirdPropBone = 28422,
+        ThirdPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+
+   }},	
+    ["0000jarp_cn_newyear_3"] = {"jarp_cn_newyear_03", "jarp_cn_newyear_03_clip", "Jarp Chinese New Year 3 ~o~Prop", AnimationOptions =
+   {
+        EmoteLoop = true,
+		Prop = "jarplion",
+        PropBone = 24818,
+        PropPlacement = {0.3,0.0,0.0,0.0,0.0,15.0},		
+		Prop = "jarp_cn_prop_4",
+        PropBone = 24818,
+        PropPlacement = {0.3,0.0,0.0,0.0,0.0,15.0},
+		
+
+
+
+   }},	  
+   ["0000jarp_cn_newyear_4"] = {"jarp_cn_newyear_7", "jarp_cn_newyear_7_clip", "Jarp Chinese New Year 4 ~o~Prop", AnimationOptions =
+   {
+   
+        EmoteLoop = true,
+		Prop = "jarplion",
+        PropBone = 0,
+        PropPlacement = {0.0,1.58,1.88,-175.0,180.0,0.0},		
+
+		
+
+
+
+   }},
+    ---- penguin V11 ----
+    ["V2penguin1_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_1_v11", "1 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_tv1',
+        PropBone = 24816,
+        PropPlacement = {-0.52, 0.099999999999999, 0.0, 5.0, 93.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V3penguin2_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_2_v11", "2 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_tv2',
+        PropBone = 24816,
+        PropPlacement = {-0.57, -0.03, 0.3, -3.0, 92.0, 200.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V4penguin3_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_3_v11", "3 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_tv1',
+        PropBone = 24816,
+        PropPlacement = {0.089999999999999, 0.16, -0.54, 13.0, 85.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V5penguin4_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_4_v11", "4 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_bolster',
+        PropBone = 24816,
+        PropPlacement = {-0.07, 0.3, 0.0, 180.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V6penguin5_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_5_v11", "5 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_turtle',
+        PropBone = 24816,
+        PropPlacement = {-0.49, 0.3, 0.0, 2.0, 90.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V7penguin6_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_6_v11", "6 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_turtle',
+        PropBone = 24816,
+        PropPlacement = {-0.44, 0.47, 0.0, -6.0, 90.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["V8penguin7_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_7_v11", "7 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_turtle1',
+        PropBone = 57005,
+        PropPlacement = {0.08, 0.06, -0.099999999999999, -70.0, 5.0, -8.9999999999999},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["V9penguin7_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_7_v11", "8 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_turtle2',
+        PropBone = 57005,
+        PropPlacement = {0.08, 0.06, -0.099999999999999, -70.0, 5.0, -8.9999999999999},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["W1penguin8_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_8_v11", "9 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_sign01',
+        PropBone = 57005,
+        PropPlacement = {0.21, -0.15, -0.22, 26.0, 142.0, -42.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["W2penguin9_v11"] = {"penguin@mppos@custom@v11", "penguin_mppos_9_v11", "10 ~b~ V11", AnimationOptions =
+    {
+        Prop = 'pg_sign02',
+        PropBone = 57005,
+        PropPlacement = {0.3, -0.02, -0.16, -16.0, 56.0, -21.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    --------- Penguin V11.5 ---------
+    ["Z001penguin_weaponanim_01"] = {"penguin@mppos@custom@v11@5", "penguin_weaponanim_01", "ถืออาวุธ ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z002penguin_weaponanim_02"] = {"penguin@mppos@custom@v11@5", "penguin_weaponanim_02", "ถืออาวุธ ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z003penguin_weaponanim_03"] = {"penguin@mppos@custom@v11@5", "penguin_weaponanim_03", "ถืออาวุธ ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z004penguin_mppos_1_v11_53"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_1_v11_5", "แอ็คกล่อง  ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_ammoboxes_v11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.58, -0.12, 0.31, -0.99999999999999, 87.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z005penguin_mppos_2_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_2_v11_5", "แอ็คกล่อง ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_ammoboxes_v11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.71, -0.37, 0.87999999999999, 0.99999999999999, 88.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z006penguin_mppos_3_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_3_v11_5", "แอ็คกล่อง ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_ammoboxes_v11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.71, -0.37, 0.87999999999999, 0.99999999999999, 88.0, 180.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z007penguin_mppos_4_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_4_v11_5", "ยืนพิงเก้าอี้บาร์ [สีดำ] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_V11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.67, -0.11, 0.0, 0.0, 93.0, 13.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z008penguin_mppos_4_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_4_v11_5", "ยืนพิงเก้าอี้บาร์ [สีขาว] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_1_V11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.67, -0.11, 0.0, 0.0, 93.0, 13.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z009penguin_mppos_4_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_4_v11_5", "ยืนพิงเก้าอี้บาร์ [สีน้ำตาล] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_2_V11_5",
+        PropBone = 24816,
+        PropPlacement = {-0.67, -0.11, 0.0, 0.0, 93.0, 13.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z010penguin_mppos_5_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_5_v11_5", "เก้าอี้บาร์ [สีดำ]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z011penguin_mppos_5_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_5_v11_5", "เก้าอี้บาร์ [สีขาว]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z012penguin_mppos_5_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_5_v11_5", "เก้าอี้บาร์ [สีน้ำตาล]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z013penguin_mppos_6_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_6_v11_5", "นั่งไขว่ห้างเก้าอี้บาร์ [สีดำ] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z014penguin_mppos_6_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_6_v11_5", "นั่งไขว่ห้างเก้าอี้บาร์ [สีขาว] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z015penguin_mppos_6_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_6_v11_5", "นั่งไขว่ห้างเก้าอี้บาร์ [สีน้ำตาล] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z016penguin_mppos_7_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_7_v11_5", "นั่งจับเข่าเก้าอี้บาร์ [สีดำ] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z017penguin_mppos_7_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_7_v11_5", "นั่งจับเข่าเก้าอี้บาร์ [สีขาว] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z018penguin_mppos_7_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_7_v11_5", "นั่งจับเข่าเก้าอี้บาร์ [สีน้ำตาล] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs2_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.079999999999999, -0.57, -11.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z019penguin_mppos_8_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_8_v11_5", "นั่งไขว่ห้างถือเหล้าเก้าอี้ [สีดำ]  ~b~1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.089999999999999, -0.22, 20.0, 0.0, 180.0},
+        SecondProp = 'prop_tumbler_01b_bar',
+        SecondPropBone = 18905,
+        SecondPropPlacement = {0.14, 0.04, 0.04, -106.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z020penguin_mppos_8_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_8_v11_5", "นั่งไขว่ห้างถือเหล้าเก้าอี้ [สีขาว]  ~b~1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_1_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.089999999999999, -0.22, 20.0, 0.0, 180.0},
+        SecondProp = 'prop_tumbler_01b_bar',
+        SecondPropBone = 18905,
+        SecondPropPlacement = {0.14, 0.04, 0.04, -106.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z021penguin_mppos_8_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_8_v11_5", "นั่งไขว่ห้างถือเหล้าเก้าอี้ [สีน้ำตาล]  ~b~1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_2_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.089999999999999, -0.22, 20.0, 0.0, 180.0},
+        SecondProp = 'prop_tumbler_01b_bar',
+        SecondPropBone = 18905,
+        SecondPropPlacement = {0.14, 0.04, 0.04, -106.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z022penguin_mppos_9_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_9_v11_5", "พิงเก้าอี้ [สีดำ] ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z023penguin_mppos_9_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_9_v11_5", "พิงเก้าอี้ [สีขาว] ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_1_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z024penguin_mppos_9_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_9_v11_5", "พิงเก้าอี้ [สีน้ำตาล] ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_2_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z025penguin_mppos_10_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_10_v11_5", "พิงเก้าอี้เล่นมือถือ [สีดำ] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        SecondProp = 'prop_phone_ing_03',
+        SecondPropBone = 57005,
+        SecondPropPlacement = {0.14, 0.0099999999999999, -0.03, 47.0, 49.0, 152.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z026penguin_mppos_10_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_10_v11_5", "พิงเก้าอี้เล่นมือถือ [สีขาว] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_1_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        SecondProp = 'prop_phone_ing_03',
+        SecondPropBone = 57005,
+        SecondPropPlacement = {0.14, 0.0099999999999999, -0.03, 47.0, 49.0, 152.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z027penguin_mppos_10_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_10_v11_5", "พิงเก้าอี้เล่นมือถือ [สีน้ำตาล] ~b~ 3 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_2_V11",
+        PropBone = 0,
+        PropPlacement = {-0.12, -0.14, -0.18, 36.0, -11.0, 155.0},
+        SecondProp = 'prop_phone_ing_03',
+        SecondPropBone = 57005,
+        SecondPropPlacement = {0.14, 0.0099999999999999, -0.03, 47.0, 49.0, 152.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z028penguin_mppos_11_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_11_v11_5", "นั่งคล่อมเก้าอี้ [สีดำ] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.12, -0.29, -16.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z029penguin_mppos_11_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_11_v11_5", "นั่งคล่อมเก้าอี้ [สีขาว] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_1_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.12, -0.29, -16.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z030penguin_mppos_11_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_11_v11_5", "นั่งคล่อมเก้าอี้ [สีน้ำตาล] ~b~ 4 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_chairs3_2_V11",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.12, -0.29, -16.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z031penguin_mppos_12_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_12_v11_5", "นอนเหยียดโซฟายาว [สีดำ] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.16, -0.13, 0.12, -90.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z032penguin_mppos_12_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_12_v11_5", "นอนเหยียด โซฟายาว [สีขาว] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.16, -0.13, 0.12, -90.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z033penguin_mppos_12_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_12_v11_5", "นอนเหยียด โซฟายาว [สีน้ำตาล] ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.16, -0.13, 0.12, -90.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z034penguin_mppos_13_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_13_v11_5", "นอนขด โซฟายาว [สีดำ]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.21, -0.04, 0.12, -52.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z035penguin_mppos_13_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_13_v11_5", "นอนขด โซฟายาว [สีขาว]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.21, -0.04, 0.12, -52.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z036penguin_mppos_13_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_13_v11_5", "นอนขด โซฟายาว [สีน้ำตาล]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {0.21, -0.04, 0.12, -52.0, -90.0, 2.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z037penguin_mppos_14_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_14_v11_5", "นั่งพิง โซฟายาว [สีดำ]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.44, -0.15, -0.079999999999999, -135.0, -184.0, 4.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z038penguin_mppos_14_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_14_v11_5", "นั่งพิง โซฟายาว [สีขาว]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.44, -0.15, -0.079999999999999, -135.0, -184.0, 4.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z039penguin_mppos_14_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_14_v11_5", "นั่งพิง โซฟายาว [สีน้ำตาล]  ~b~ 2 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa3_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.44, -0.15, -0.079999999999999, -135.0, -184.0, 4.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z040penguin_mppos_15_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_15_v11_5", "นั่งขัดสมาธิ โซฟาเล็ก [สีดำ]  ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa4_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.03, -0.13, -0.099999999999999, 39.0, -0.99999999999999, 179.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z041penguin_mppos_15_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_15_v11_5", "นั่งขัดสมาธิ [สีขาว]  ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa4_1_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.03, -0.13, -0.099999999999999, 39.0, -0.99999999999999, 179.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    ["Z042penguin_mppos_15_v11_5"] = {"penguin@mppos@custom@v11@5", "penguin_mppos_15_v11_5", "นั่งขัดสมาธิ [สีน้ำตาล]  ~b~ 1 ~p~ V11.5", AnimationOptions =
+    {
+        Prop = "pg_sofa4_2_V11_5",
+        PropBone = 0,
+        PropPlacement = {-0.03, -0.13, -0.099999999999999, 39.0, -0.99999999999999, 179.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+
+    ["0000Jarp_klowns"] = {"jarp_klowns", "jarp_klowns_clip", "Jarp Clowns ~o~ Prop", AnimationOptions =
+    {
+            EmoteLoop = true,
+            Prop = "w_me_knife_01",
+            PropBone = 60309,
+            PropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+            
+            SecondProp = 'w_me_knife_01',
+            SecondPropBone = 28422,
+            SecondPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+            
+            ThirdProp = 'w_me_knife_01',
+            ThirdPropBone = 57717,
+            ThirdPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+            
+            FourthProp = 'w_me_knife_01',
+            FourthPropBone = 24806,
+            FourthPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+            
+            
+            FifthProp = 'w_me_knife_01',
+            FifthPropBone = 36029,
+            FifthPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+
+    }},	
+    ["x000001"] = {"kidhod_christmass_ball01", "clip", "kidhod_christmass_ball01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_ball",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+       ["x000002"] = {"kidhod_christmass_ball02", "clip", "kidhod_christmass_ball02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_ball",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+       ["x000003"] = {"kidhod_christmass_ball03", "clip", "kidhod_christmass_ball03", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_ball",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+       ["x000004"] = {"kidhod_christmass_bear00001", "clip", "kidhod_christmass_bear01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_bear",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.1, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+       ["x000005"] = {"kidhod_christmass_bear0002", "clip", "kidhod_christmass_bear02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_bear",
+        PropBone = 1,
+        PropPlacement = {-0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000006"] = {"kidhod_christmass_box01", "clip", "kidhod_christmass_box01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_box",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000007"] = {"kidhod_christmass_chair01", "clip", "kidhod_christmass_chair01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_chair",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000008"] = {"kidhod_christmass_chair02", "clip", "kidhod_christmass_chair02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_chair",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000009"] = {"kidhod_christmass_cup01", "clip", "kidhod_christmass_cup01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_cup",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000010"] = {"kidhod_christmass_cup02", "clip", "kidhod_christmass_cup02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_cup",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000011"] = {"kidhod_christmass_cute0001", "clip", "kidhod_christmass_cute01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_cute",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000012"] = {"kidhod_christmass_deer01", "clip", "kidhod_christmass_deer01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_deer",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+        ["x000013"] = {"kidhod_christmass_deer02", "clip", "kidhod_christmass_deer02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_deer",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+        ["x000014"] = {"kidhod_christmass_deer03", "clip", "kidhod_christmass_deer03", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_deer",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+       ["x000015"] = {"kidhod_christmass_elf01", "clip", "kidhod_christmass_elf01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_elf",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+    
+      ["x000016"] = {"kidhod_christmass_elf02", "clip", "kidhod_christmass_elf02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_elf",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000017"] = {"kidhod_christmass_grinch01", "clip", "kidhod_christmass_grinch01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_grinch",
+        PropBone = 31086,
+        PropPlacement = {-0.6, -0.0, 0.0, 0.0, 90.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+      ["x000018"] = {"kidhod_christmass_sledgesanta01", "clip", "kidhod_christmass_sledgesanta01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_sledgesanta",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000019"] = {"kidhod_christmass_sledgesanta02", "clip", "kidhod_christmass_sledgesanta02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_sledgesanta",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000020"] = {"kidhod_christmass_sledgesanta2_01", "clip", "kidhod_christmass_sledgesanta2_01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_sledgesanta2",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000021"] = {"kidhod_christmass_sledgesanta2_02", "clip", "kidhod_christmass_sledgesanta2_02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_sledgesanta2",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000022"] = {"kidhod_christmass_snowman01", "clip", "kidhod_christmass_snowman01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_snowman",
+        PropBone = 1,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+      ["x000023"] = {"kidhod_christmass_swing 001", "clip", "kidhod_christmass_swing01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_swing",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, -0.3, 10.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000024"] = {"kidhod_christmass_swing0002", "clip", "kidhod_christmass_swing02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_swing",
+        PropBone = 0,
+        PropPlacement = {0.0, 0.0, -0.3, 10.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000025"] = {"kidhod_christmass_tree01", "clip", "kidhod_christmass_tree01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_tree",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.5, -0.2,10.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000026"] = {"kidhod_christmass_tree02", "clip", "kidhod_christmass_tree02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_tree",
+        PropBone = 0,
+        PropPlacement = {0.0, -0.9, -0.2,0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000027"] = {"kidhod_giftpose", "clip", "kidhod_giftpose", AnimationOptions =
+    {
+        Prop = "kidhod_gift",
+        PropBone = 1,
+        PropPlacement = {-0.08, 0.0, -0.05, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+     ["x000028"] = {"kidhod_giftpose", "clip", "kidhod_giftpose", AnimationOptions =
+    {
+        Prop = "kidhod_gift1",
+        PropBone = 1,
+        PropPlacement = {-0.05, 0.4, 0.24, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+     ["x000029"] = {"kidhod_christmass_snowball01", "clip", "kidhod_christmass_snowball01", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_snowball",
+        PropBone = 1,
+        PropPlacement = {0.1, 0.0, 0.0, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+     ["x000030"] = {"kidhod_christmass_snowball02", "clip", "kidhod_christmass_snowball02", AnimationOptions =
+    {
+        Prop = "kidhod_christmass_snowball",
+        PropBone = 1,
+        PropPlacement = {0.1, 0.1, -0.05, 0.0, 0.0, 175.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+
+
+    ["AMeowballoon12"] = {"loikathongpose1@animation", "loikathongpose1_clip", "Loikathong Sit 1 ~y~ NEW", AnimationOptions =
+    {
+        Prop = 'kathong_pose1',
+        PropBone = 0x0,
+        PropPlacement = {0.16, 0.07, -0.28, 0.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = false,
+    }},
+
+    ["AMeowballoon13"] = {"loikathongpose2@animation", "loikathongpose2_clip", "Loikathong Pose 1  ~y~ NEW", AnimationOptions =
+    {
+    Prop = 'kathong_pose2',
+    PropBone = 0x49d9,
+    PropPlacement = {0.13, 0.0, -0.01, 177.01, 7.01, 0.0},
+    EmoteLoop = true,
+    EmoteMoving = true,
+    }},
+
+    ["AMeowballoon14"] = {"loikathongpose3@animation", "loikathongpose3_clip", "Loikathong Pose 2  ~y~ NEW", AnimationOptions =
+    {
+    Prop = 'kathong_pose3',
+    PropBone = 0x60f2,
+    PropPlacement = {-0.11, 0.43, -0.01, 0.0, 90.0, 0.0},
+    EmoteLoop = true,
+    EmoteMoving = true,
+    }},
+
+    ["AMeowballoon15"] = {"loikathongpose3@animation", "loikathongpose3_clip", "Loikathong Pose 3  ~y~ NEW", AnimationOptions =
+    {
+    Prop = 'kathong_pose4',
+    PropBone = 0x60f2,
+    PropPlacement = {-0.11, 0.43, -0.01, 0.0, 90.0, 0.0},
+    EmoteLoop = true,
+    EmoteMoving = true,
+    }},
     ["AGlap_Couple-AnimV1-1-1"] = {"glap@couple-anim-v1", "couple-animv1-1-1_clip", "Couple Pose 1 ~r~New", AnimationOptions =
     {
         EmoteLoop = true,
@@ -2780,7 +3812,7 @@ DP.Emotes = {
         EmoteLoop = true,
         EmoteMoving = true,
     }},
-    ["0A1Glap_Sugar_Rune"] = {"glap@sugar-sugar-rune", "sugar-sugar-rune_clip", "Sugar Rune Tiktok ~r~New", AnimationOptions =
+    ["0A1Glap_Sugar_Rune"] = {"glap@sugar-sugar-rune", "sugar-sugar-rune_clip", "Sugar Rune Tikato ~r~New", AnimationOptions =
     {
         EmoteLoop = true,
         EmoteMoving = false,
@@ -5253,8 +6285,7 @@ DP.Emotes = {
             PropPlacement = {0.0800003, -0.004999998, -0.035, 175.5002, 311.0003, 232.0},
             EmoteLoop = true,
             EmoteMoving = false
-        },
-        type = 'sit',
+        }
     },
     ["Nekositchair8"] = {
         "anim@amb@nightclub@smoking@",
@@ -5266,8 +6297,7 @@ DP.Emotes = {
             PropPlacement = {0.0800003, -0.004999998, -0.035, 175.5002, 311.0003, 232.0},
             EmoteLoop = true,
             EmoteMoving = false
-        },
-        type = 'sit',
+        }
     },
     ["Nekodrink2"] = {
         "friends@frl@ig_1",
@@ -8066,6 +9096,33 @@ DP.Emotes = {
 }
 
 DP.PropEmotes = {
+    ["giftbox"] = {
+        "anim@heists@box_carry@",
+        "idle",
+        "Giftbox",
+        AnimationOptions = {
+            Prop = "hnygiftbox24",
+            PropBone = 60309,
+            PropPlacement = {0.07, 0.12, 0.29, -45.0, 110.0, -1},
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+	["eat1"] = {
+		"anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1", 
+		"base_idle", 
+		"Eat 1", 
+		AnimationOptions = {
+			Prop = "prop_thaifood_01",
+			PropBone = 60309,
+			PropPlacement = {0.0, 0.0300, 0.0100, 0.0, 0.0, 0.0},
+			SecondProp = 'h4_prop_h4_caviar_spoon_01a',
+			SecondPropBone = 28422,
+			SecondPropPlacement = {0.0,0.0,0.0,0.0,0.0,0.0},
+			EmoteLoop = true,
+			EmoteMoving = true,
+		}
+	},
     ["umbrella"] = {
         "amb@world_human_drinking@coffee@male@base",
         "base",
